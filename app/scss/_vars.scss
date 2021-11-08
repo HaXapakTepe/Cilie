@@ -1,0 +1,60 @@
+ 
+$accent-hover: #008A1A;
+$form-hover: #C5B5A7;
+$bg-header: #D4C2AF;
+$language: #6b6b6b;
+$default: #E6D2BE;
+$accent: #81A688;
+$border: #BEBEBE;
+$price: #D7C3B6;
+$popup: #E6D5C3;
+$text: #000000;
+$btn: #FFFFFF;
+
+%roboto-it-100 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+%roboto-it-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+%roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+%roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+%roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+%sanchez-it-400 {
+  font-family: "Sanchez-Italic", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+%sanchez-400 {
+  font-family: "Sanchez-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%thonbury-700 {
+  font-family: "Thonburi", sans-serif;
+  font-weight: 700;
+}
+
+%ibmplexsans-400 {
+  font-family: "IBMPlexSans-Regular", sans-serif;
+  font-weight: 400;
+}
