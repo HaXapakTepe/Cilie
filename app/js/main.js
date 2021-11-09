@@ -92,6 +92,10 @@ $(function () {
     readOnly: true,
   });
 
+  $('.menu__item').on('click', function () {
+    $('.menu__link').toggleClass('menu__link--active');
+  });
+
   $('.faq__arrow').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
   });

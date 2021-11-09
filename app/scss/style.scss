@@ -5,6 +5,9 @@
 @import 'global';
 
 .header {
+  position: fixed;
+  right: 50%;
+  transform: translateX(50%);
   width: 100%;
   z-index: 5;
   padding: 13px 0 8px;
@@ -72,6 +75,10 @@
       border-bottom: 3px solid $accent;
       color: $text;
     }
+
+    &:active {
+      border-bottom: 3px solid $accent;
+    }
   }
 }
 
@@ -113,6 +120,7 @@
 }
 
 .top {
+  padding-top: 80px;
   background-image: url("../images/bg-top.png");
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -284,6 +292,9 @@
   }
 
   &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -301,8 +312,6 @@
     transition: all 0.3s;
 
     &:hover {
-      display: flex;
-      align-items: center;
       top: 0px;
       right: -52px;
       width: 108px;
@@ -317,14 +326,13 @@
     position: absolute;
     right: 5px;
     top: 3px;
-    transition: all 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-bottom: 3px solid $accent;
     }
 
     &:focus {
-      border-bottom: 3px solid $accent;
       color: $text;
     }
   }
@@ -332,6 +340,7 @@
   &__video {
     max-width: 250px;
     margin-bottom: 10px;
+    outline: transparent;
   }
 
   &__play {
@@ -339,10 +348,6 @@
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    // background-image: url('../images/icon/play-btn.png');
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-size: cover;
   }
 
   &__cost {
@@ -364,8 +369,9 @@
 
   &__link {
     margin-bottom: 10px;
-    &:hover {
-      background-color: rgb(0, 0, 0, 0.8);
+    &:hover, 
+    &:focus {
+      outline: 1px solid $accent-hover;
     }
   }
 }

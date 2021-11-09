@@ -75,7 +75,7 @@ body {
       background-color: transparent;
       font-size: 0;
       cursor: pointer;
-      outline: transparent;
+     
 
       &::before {
         content: '';
@@ -87,21 +87,19 @@ body {
         border-radius: 50%;
         background-color: $btn;
         transform: translate(-50%, -50%);
+        transition: all 0.3s;
       }
 
       &:hover,
       &:focus {
-        border: 1px solid $accent-hover;
+        outline: 1px solid $accent-hover;
       }
 
       &:hover,
       &:focus,
       &:active {
         border-radius: 50%;
-      }
-
-      &:active {
-        border: 1px solid $accent-hover;
+        outline: 1px solid $accent-hover;
       }
     }
 
