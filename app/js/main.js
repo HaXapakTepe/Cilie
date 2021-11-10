@@ -96,6 +96,18 @@ $(function () {
     $('.menu__link').toggleClass('menu__link--active');
   });
 
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('active');
+  });
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__burger').toggleClass('menu__burger--active');
+  });
+
+  $('.language__link').on('click', function () {
+    $('.language__link').toggleClass('language__link--active');
+  });
+
   $('.faq__arrow').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
   });
@@ -109,18 +121,6 @@ $(function () {
   $('.popup__close').click(function () {
     $('.popup').fadeOut(500);
     $('html').removeClass('no-scroll');
-  });
-
-  $('.menu__btn').on('click', function () {
-    $('.menu__list').toggleClass('active');
-  });
-
-  $('.menu__btn').on('click', function () {
-    $('.menu__burger').toggleClass('menu__burger--active');
-  });
-
-  $('.language__link').on('click', function () {
-    $('.language__link').toggleClass('language__link--active');
   });
 
 });

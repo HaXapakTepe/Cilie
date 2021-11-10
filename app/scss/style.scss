@@ -83,6 +83,7 @@
 }
 
 .language {
+  margin-right: 10px;
   span {
     color: $text;
   }
@@ -367,8 +368,9 @@
     line-height: 23px;
   }
 
-  &__link {
+  &__images {
     margin-bottom: 10px;
+
     &:hover, 
     &:focus {
       outline: 1px solid $accent-hover;

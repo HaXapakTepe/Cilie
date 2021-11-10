@@ -91,11 +91,6 @@ body {
       }
 
       &:hover,
-      &:focus {
-        outline: 1px solid $accent-hover;
-      }
-
-      &:hover,
       &:focus,
       &:active {
         border-radius: 50%;
