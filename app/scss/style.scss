@@ -126,7 +126,6 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $default;
 
   &__inner {
     display: flex;
@@ -160,7 +159,6 @@
 
 .info {
   padding: 90px 0;
-  background-color: $default;
 
   &__container {
     max-width: 1400px;
@@ -222,7 +220,6 @@
 
 .top-slider {
   padding-bottom: 90px;
-  background-color: $default;
 
   &__container {
     max-width: 1430px;
@@ -268,7 +265,6 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $default;
 
   &__container {
     max-width: 1430px;
@@ -387,7 +383,6 @@
 
 .reviews-slider {
   padding: 82px 0;
-  background-color: $default;
 
   &__container {
     max-width: 1430px;
@@ -465,6 +460,7 @@
 
   &__title {
     margin-right: 75px;
+    margin-bottom: 35px;
     color: $btn;
   }
 
@@ -483,12 +479,13 @@
       position: relative;
       left: -25px;
       height: 1px;
+      margin-bottom: 35px;
       background-color: $btn;
     }
   }
 
   &__subtitle {
-    padding: 35px 50px 0 0;
+    padding-right: 50px;
     cursor: pointer;
   }
 
@@ -503,7 +500,7 @@
 
   &__arrow {
     position: absolute;
-    top: 41px;
+    top: 5px;
     right: 25px;
     width: 20px;
     height: 20px;
@@ -545,7 +542,6 @@
 
 .contact {
   padding: 85px 0;
-  background-color: $default;
 
   &__container {
     max-width: 1430px;
