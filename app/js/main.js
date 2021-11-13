@@ -108,8 +108,12 @@ $(function () {
     $('.language__link').toggleClass('language__link--active');
   });
 
-  $('.faq__arrow').click(function (event) {
-    $(this).toggleClass('active').next().slideToggle(300);
+  // $('.faq__subtitle').on('click', function () {
+  //   $('.faq__text').toggleClass('faq__text--active');
+  // });
+
+  $('.faq__subtitle').on('click', function () {
+    $('.faq__arrow').toggleClass('faq__arrow--active');
   });
 
   $('.popup__open').click(function (e) {
