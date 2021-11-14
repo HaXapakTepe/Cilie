@@ -101,6 +101,7 @@ body {
       button {
         &::before {
           background-color: $accent;
+          transition: all 0.3s;
         }
       }
     }

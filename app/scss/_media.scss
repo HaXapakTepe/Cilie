@@ -62,6 +62,14 @@
       background-position: center;
       background-size: contain;
       transition: all 0.3s linear;
+
+      &:hover {
+        background-image: url('../images/icon/close-bold.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: all 0.3s linear;
+      }
     }
 
     &__list {
@@ -101,21 +109,6 @@
     margin: 0 30px 0 auto;
   }
 
-  .contact {
-    #map {
-      margin-right: 25px;
-    }
-  }
-
-  .top-slider {
-    padding-bottom: 60px;
-
-    &__content {
-      max-width: 585px;
-      margin: 0 auto 45px;
-    }
-  }
-
   .top {
     &__inner {
       padding: 81px 0 60px;
@@ -131,9 +124,24 @@
     }
   }
 
+  .top-slider {
+    padding-bottom: 60px;
+
+    &__content {
+      max-width: 585px;
+      margin: 0 auto 45px;
+    }
+  }
+
   .faq {
     &__inner {
       margin-left: 25px;
+    }
+  }
+
+  .contact {
+    #map {
+      margin-right: 25px;
     }
   }
 }
@@ -217,9 +225,14 @@
       font-size: 20px;
     }
 
-    &__text {
+    // &__text {
+    //   font-size: 15px;
+    //   line-height: 18px;
+    // }
+
+    &__input:checked+.faq__text {
       font-size: 15px;
-      line-height: 18px;
+      line-height: 1.2em;
     }
   }
 
