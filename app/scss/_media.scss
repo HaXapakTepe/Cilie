@@ -221,19 +221,16 @@
   .faq {
     padding: 60px 0;
 
+    &__item {
+      &::before {
+        top: 6px;
+      }
+    }
+
     &__subtitle {
       font-size: 20px;
     }
 
-    // &__text {
-    //   font-size: 15px;
-    //   line-height: 18px;
-    // }
-
-    &__input:checked+.faq__text {
-      font-size: 15px;
-      line-height: 1.2em;
-    }
   }
 
   .contact {
@@ -418,12 +415,15 @@
     }
 
     &__subtitle {
-      font-size: 15px;
-      line-height: 18px;
+
+      &::before,
+      &::after {
+        top: 15px;
+      }
     }
 
     &__text {
-      font-size: 10px;
+      font-size: 14px;
       line-height: 12px;
     }
   }

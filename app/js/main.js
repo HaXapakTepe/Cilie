@@ -108,10 +108,13 @@ $(function () {
     $('.language__link').toggleClass('language__link--active');
   });
 
-  $('.faq__subtitle').on('click', function () {
-    $('.faq__text').toggleClass('faq__text--active');
+  $('.faq__subtitle').click(function (event) {
+    if ($('.faq__item').hasClass('faq__one')) {
+      $('.faq__subtitle').not($(this)).removeClass('active');
+      $('.faq__text').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
   });
-
 
   $('.popup__open').click(function (e) {
     e.preventDefault();

@@ -50,7 +50,7 @@
     }
 
     &:first-child {
-    padding-left: 35px;
+      padding-left: 35px;
     }
 
     &:last-child {
@@ -83,6 +83,7 @@
 
 .language {
   margin-right: 10px;
+
   span {
     color: $text;
   }
@@ -334,6 +335,7 @@
     max-width: 250px;
     margin-bottom: 10px;
     outline: transparent;
+
     &::before {
       content: '';
       position: absolute;
@@ -344,8 +346,8 @@
       height: 70px;
       background-image: url("../images/icon/play-btn.png");
     }
-    &:hover 
-    .price-slider__images {
+
+    &:hover .price-slider__images {
       outline: 1px solid $accent-hover;
     }
   }
@@ -370,7 +372,7 @@
   &__images {
     margin-bottom: 10px;
 
-    &:hover, 
+    &:hover,
     &:focus {
       outline: 1px solid $accent-hover;
     }
@@ -467,7 +469,7 @@
 
   &__item {
     position: relative;
-    
+
     &::after {
       content: '';
       display: block;
@@ -477,72 +479,31 @@
       margin-bottom: 35px;
       background-color: $btn;
     }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 25px;
+      width: 20px;
+      height: 20px;
+      background-color: $btn;
+      border-radius: 50%;
+      cursor: pointer;
+    }
   }
 
   &__subtitle {
-    display: block;
+    position: relative;
     padding-right: 50px;
-    cursor: pointer;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   right: 23px;
-    //   width: 30px;
-    //   height: 28px;
-    //   background-image: url("../images/icon/arrow.svg");
-    // }
-  }
-
-  // &__input {
-  //   width: 0;
-  //   height: 0;
-  //   appearance: none;
-  //   position: absolute;
-  // }
-
-  // &__input:checked+.faq__text {
-  //   margin-bottom: 25px;
-  //   padding: 25px 35px 0 0;
-  //   opacity: 1;
-  //   font-size: 20px;
-  //   line-height: 1.2em;
-  //   transition: all 0.3s;
-  // }
-
-  &__text {
-    @extend %roboto-it-300;
-    font-size: 0;
-    line-height: 0;
-    opacity: 0;
-    transition: all 0.3s;
-  }
-
-  &__text--active {
-    margin-bottom: 25px;
-    padding: 25px 20px 0 0;
-    opacity: 1;
-    font-size: 20px;
-    line-height: 1.2em;
-    transition: all 0.3s;
-  }
-
-  &__arrow {
-    position: absolute;
-    top: 5px;
-    right: 25px;
-    width: 20px;
-    height: 20px;
-    background-color: $btn;
-    border-radius: 50%;
     cursor: pointer;
 
     &::before,
     &::after {
       content: '';
       position: absolute;
-      top: 10px;
-      left: 0;
+      top: 15px;
+      right: 0;
       width: 9px;
       height: 1px;
       background-color: $accent;
@@ -550,23 +511,43 @@
     }
 
     &::before {
-      left: 9px;
-      transform: rotate(-40deg);
+      right: 33px;
+      transform: rotate(40deg);
     }
 
     &::after {
-      left: 3px;
-      transform: rotate(40deg);
+      right: 27px;
+      transform: rotate(-40deg);
     }
   }
 
-  &__arrow::before .faq__input {
+  &__subtitle.active::before {
+    transform: rotate(-40deg);
+  }
+
+  &__subtitle.active::after {
     transform: rotate(40deg);
   }
 
-  &__arrow::after .faq__input {
-    transform: rotate(-40deg);
+  &__text {
+    display: none;
+    margin-bottom: 25px;
+    padding: 25px 30px 0 0;
+    @extend %roboto-it-300;
+    font-size: 20px;
+    line-height: 1.2em;
   }
+
+  // &__arrow {
+  //   position: absolute;
+  //   top: 5px;
+  //   right: 25px;
+  //   width: 20px;
+  //   height: 20px;
+  //   background-color: $btn;
+  //   border-radius: 50%;
+  //   cursor: pointer;
+  // }
 }
 
 .contact {
