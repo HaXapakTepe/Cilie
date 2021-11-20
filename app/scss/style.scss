@@ -274,8 +274,11 @@
     margin-bottom: 60px;
   }
 
+  &__inner {
+    padding-left: 50px;
+  }
+
   &__item {
-    margin: 0 10px 0 50px;
     max-width: 250px;
   }
 
@@ -315,7 +318,7 @@
     border-radius: 50%;
     @extend %sanchez-it-400;
     font-size: 0;
-    line-height: 1px;
+    line-height: 1.2em;
     text-align: center;
     background-color: $price;
     transition: all 0.3s;
@@ -357,7 +360,7 @@
     align-items: center;
     position: absolute;
     bottom: 60px;
-    right: -35px;
+    right: -20px;
     width: 70px;
     height: 70px;
     border: 1px solid $accent;
@@ -371,11 +374,6 @@
 
   &__images {
     margin-bottom: 10px;
-
-    &:hover,
-    &:focus {
-      outline: 1px solid $accent-hover;
-    }
   }
 }
 
@@ -537,17 +535,6 @@
     font-size: 20px;
     line-height: 1.2em;
   }
-
-  // &__arrow {
-  //   position: absolute;
-  //   top: 5px;
-  //   right: 25px;
-  //   width: 20px;
-  //   height: 20px;
-  //   background-color: $btn;
-  //   border-radius: 50%;
-  //   cursor: pointer;
-  // }
 }
 
 .contact {
