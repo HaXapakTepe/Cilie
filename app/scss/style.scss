@@ -24,6 +24,7 @@
 
 .logo {
   padding: 3px 0 0 30px;
+  outline: transparent;
 }
 
 .menu {
@@ -72,13 +73,17 @@
 
     &:focus {
       border-bottom: 3px solid $accent;
-      color: $text;
     }
 
     &:active {
       border-bottom: 3px solid $accent;
+      color: $accent;
+    }
+    &.menu__link--active {
+      border-bottom: 3px solid $accent;
     }
   }
+
 }
 
 .language {
@@ -367,6 +372,7 @@
     border-radius: 50%;
     justify-content: center;
     background-color: $price;
+    color: $text;
     @extend %roboto-it-300;
     font-size: 20px;
     line-height: 23px;

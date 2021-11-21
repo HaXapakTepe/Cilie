@@ -257,7 +257,8 @@
 
     .link {
       position: absolute;
-      min-width: 151px;
+      max-width: 151px;
+      padding: 0 15px;
       bottom: -19px;
       right: -165px;
       font-size: 20px;
@@ -502,15 +503,6 @@
       line-height: 16px;
     }
 
-    .link {
-      position: absolute;
-      min-width: 151px;
-      bottom: -19px;
-      right: -165px;
-      font-size: 20px;
-      line-height: 1.2em;
-    }
-
   }
 
   .faq {
@@ -548,7 +540,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .title {
     margin-bottom: 25px;
     font-size: 18px;
@@ -670,7 +662,15 @@
   }
 
   .price-slider {
-    display: none;
+    &__content {
+      width: 50%;
+      margin: 0 35px;
+    }
+
+    .link {
+      max-width: 130px;
+      right: -150px;
+    }
   }
 
   .reviews-slider {

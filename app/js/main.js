@@ -92,8 +92,11 @@ $(function () {
     readOnly: true,
   });
 
-  $('.menu__item').on('click', function () {
-    $('.menu__link').toggleClass('menu__link--active');
+
+
+  $('.menu__link').on('click', function () {
+    $(this).toggleClass('menu__link--active');
+    $('.menu__link').not($(this)).removeClass('menu__link--active');
   });
 
   $('.menu__btn').on('click', function () {
