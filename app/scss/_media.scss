@@ -158,6 +158,16 @@
     line-height: 35px;
   }
 
+  .top,
+  .info,
+  .top-slider,
+  .price-slider,
+  .reviews-slider,
+  .faq,
+  .contact {
+    padding: 60px 0;
+  }
+
   .top {
     &__title {
       font-size: 45px;
@@ -265,16 +275,6 @@
       line-height: 1.2em;
     }
 
-  }
-
-  .top,
-  .info,
-  .top-slider,
-  .price-slider,
-  .reviews-slider,
-  .faq,
-  .contact {
-    padding: 60px 0;
   }
 
   .contact {
@@ -408,7 +408,7 @@
 
     &__images--adaptive {
       display: block;
-      width: 180px;
+      width: 160px;
     }
   }
 
@@ -604,7 +604,6 @@
     }
 
     &__item {
-
       &+.menu__item {
         padding: 10px 0 0;
       }
@@ -631,7 +630,6 @@
   }
 
   .top {
-
     &__title {
       top: -50px;
       width: 220px;
@@ -651,14 +649,11 @@
 
   .top,
   .info,
+  .top-slider,
   .reviews-slider,
   .faq,
   .contact {
     padding: 40px 0;
-  }
-
-  .top-slider {
-    padding-bottom: 0;
   }
 
   .price-slider {
@@ -674,9 +669,7 @@
   }
 
   .reviews-slider {
-
     &__title {
-
       &::after {
         top: 345px;
       }
@@ -699,6 +692,7 @@
     }
 
     &__info-text {
+      width: 200px;
       font-size: 16px;
       line-height: 19px;
     }
@@ -716,7 +710,6 @@
   }
 
   .footer {
-
     &__link-icon {
       width: 27px;
     }
