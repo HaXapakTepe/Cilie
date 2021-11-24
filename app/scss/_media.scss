@@ -376,7 +376,7 @@
 
     &__inner {
       flex-direction: inherit;
-      padding: 81px 0 0;
+      padding: 12px 0 0;
     }
 
     &__title {
@@ -555,7 +555,7 @@
 
   .logo {
     position: absolute;
-    bottom: 0;
+    bottom: 110px;
     left: 50%;
     padding: 0;
     z-index: 6;
@@ -671,8 +671,22 @@
   .reviews-slider {
     &__title {
       &::after {
-        top: 345px;
+        top: 270px;
       }
+    }
+
+    &__item {
+      height: 200px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__name {
+      font-size: 15px;
+      line-height: 18px;
     }
   }
 
@@ -717,6 +731,19 @@
     &__copy {
       font-size: 12px;
       line-height: 16px;
+    }
+  }
+
+  .popup{
+    &__content {
+      bottom: -70px;
+      padding: 35px 5px;
+    }
+  }
+
+  .confirmation {
+    &__content {
+      bottom: -90px;
     }
   }
 }

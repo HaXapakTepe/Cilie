@@ -848,6 +848,9 @@
           Выберите наращивание
         </p>
         <select class="popup__input" tabindex="3" name="effects" placeholder="Выберите наращивание">
+          <option class="popup__option popup__option--first" value="" default disabled selected>
+            Выберите наращивание
+          </option>
           <option class="popup__option" value="Эффект 2D">
             Эффект 2D
           </option>
@@ -857,7 +860,7 @@
           <option class="popup__option" value="Эффект 3D">
             Эффект 3D
           </option>
-          <option class="popup__option" selected value="Классика">
+          <option class="popup__option" value="Классика">
             Классика
           </option>
           <option class="popup__option" value="Лисий эффект">
@@ -877,22 +880,57 @@
           Выберите мастера
         </p>
         <select class="popup__input" tabindex="4" name="masters" placeholder="Выберите мастера" required>
-          <option class="popup__option" value="Романова Джулия">Романова Джулия</option>
-          <option class="popup__option" value="Карамзина Лилия">Карамзина Лилия</option>
-          <option class="popup__option" value="Хорошева Инна">Хорошева Инна</option>
-          <option class="popup__option" value="Чупина Олеся">Чупина Олеся</option>
-          <option class="popup__option" value="Котова Дарья">Котова Дарья</option>
-          <option class="popup__option" selected value="Рыжова Елизавета">Рыжова Елизавета</option>
-          <option class="popup__option" value="Зотова Анна">Зотова Анна</option>
-          <option class="popup__option" value=Иванова Юлия"">Иванова Юлия</option>
-          <option class="popup__option" value="Абрамова Ольга">Абрамова Ольга</option>
-          <option class="popup__option" value="Иванова Елена">Иванова Елена</option>
-          <option class="popup__option" value="Крылова Дарья">Крылова Дарья</option>
-          <option class="popup__option" value="Сушина Анастасия">Сушина Анастасия</option>
-          <option class="popup__option" value=Симонова Елена"">Симонова Елена</option>
-          <option class="popup__option" value="Кускова Мила">Кускова Мила</option>
-          <option class="popup__option" value="Юшина Анна">Юшина Анна</option>
-          <option class="popup__option" value="Левина Ольга">Левина Ольга</option>
+          <option class="popup__option popup__option--first" value="" default disabled selected>
+            Выберите мастера
+          </option>
+          <option class="popup__option" value="Романова Джулия">
+            Романова Джулия
+          </option>
+          <option class="popup__option" value="Карамзина Лилия">
+            Карамзина Лилия
+          </option>
+          <option class="popup__option" value="Хорошева Инна">
+            Хорошева Инна
+          </option>
+          <option class="popup__option" value="Чупина Олеся">
+            Чупина Олеся
+          </option>
+          <option class="popup__option" value="Котова Дарья">
+            Котова Дарья
+          </option>
+          <option class="popup__option" value="Рыжова Елизавета">
+            Рыжова Елизавета
+          </option>
+          <option class="popup__option" value="Зотова Анна">
+            Зотова Анна
+          </option>
+          <option class="popup__option" value=Иванова Юлия"">
+            Иванова Юлия
+          </option>
+          <option class="popup__option" value="Абрамова Ольга">
+            Абрамова Ольга
+          </option>
+          <option class="popup__option" value="Иванова Елена">
+            Иванова Елена
+          </option>
+          <option class="popup__option" value="Крылова Дарья">
+            Крылова Дарья
+          </option>
+          <option class="popup__option" value="Сушина Анастасия">
+            Сушина Анастасия
+          </option>
+          <option class="popup__option" value=Симонова Елена"">
+            Симонова Елена
+          </option>
+          <option class="popup__option" value="Кускова Мила">
+            Кускова Мила
+          </option>
+          <option class="popup__option" value="Юшина Анна">
+            Юшина Анна
+          </option>
+          <option class="popup__option" value="Левина Ольга">
+            Левина Ольга
+          </option>
         </select>
         <input class="popup__btn" type="submit" value="Готово">
       </div>
@@ -902,6 +940,7 @@
   <div class="confirmation">
     <div class="confirmation__body">
       <div class="confirmation__content">
+        <img class="confirmation__close" src="images/icon/close.svg" alt="icon close">
         <p class="confirmation__title title">
           Вы записаны!
         </p>

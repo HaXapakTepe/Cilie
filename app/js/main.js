@@ -130,4 +130,15 @@ $(function () {
     $('html').removeClass('no-scroll');
   });
 
+  $('.popup__btn').click(function (e) {
+    e.preventDefault();
+    $('.confirmation').fadeIn(500);
+    $('html').addClass('no-scroll-two');
+  });
+
+  $('.confirmation__close').click(function () {
+    $('.confirmation').fadeOut(500);
+    $('html').removeClass('no-scroll-two');
+  });
+
 });

@@ -408,12 +408,6 @@
     }
   }
 
-  &__items {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
   &__item {
     display: flex;
     flex-direction: column;
@@ -568,8 +562,11 @@
   }
 
   &__info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
-    margin: 0 5px;
+    margin-right: 5px;
   }
 
   &__info-images {
@@ -626,7 +623,7 @@
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0, 0.9);
-  z-index: 5;
+  z-index: 6;
 
   &__area {
     position: absolute;
@@ -710,12 +707,12 @@
     }
 
     &:hover {
-      border: 1px solid black;
+      border: 1px solid $text;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
 
     &:focus {
-      border: 1px solid black;
+      border: 1px solid $text;
     }
   }
 
@@ -724,7 +721,12 @@
     line-height: 19px;
     background: $form-hover;
     background-color: $popup;
-    transition: all 0.5s;
+    transition: all 0.3s;
+  }
+
+  &__option--first {
+    background-color: $accent-hover;
+    background: $accent-hover;
   }
 
   &__btn {
@@ -735,33 +737,47 @@
     height: 40px;
     margin: 25px auto 0;
     border-radius: 6px;
-    border: 1px solid $accent;
+    border: 1px solid $accent-hover;
     @extend %roboto-700;
     font-size: 16px;
     line-height: 19px;
     color: $btn;
     background-color: $border;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: all 0.3s;
 
     &:hover {
       background-color: $accent;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      border: 1px solid $accent-hover;
+    }
+
+    &:active {
+      background-color: $accent-btn;
+    }
+
+    &:disabled {
+      color: #AFA094;
+      background-color: $default;
+      border: 1px solid $accent;
+    }
   }
 }
 
-.no-scroll {
-  overflow-y: hidden;
-}
-
 .confirmation {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  visibility: hidden;
+  // visibility: hidden;
   background: rgb(0, 0, 0, 0.9);
+  z-index: 5;
 
   &__body {
     display: flex;
@@ -772,13 +788,23 @@
   }
 
   &__content {
-    width: 355px;
+    position: relative;
+    max-width: 355px;
     padding: 100px 30px 70px;
     background-image: url("../images/icon/confirmation-bg.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $default;
+  }
+
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
   }
 
   &__title {
@@ -796,5 +822,9 @@
   }
 }
 
+.no-scroll,
+.no-scroll-two {
+  overflow-y: hidden;
+}
 
 @import 'media';
