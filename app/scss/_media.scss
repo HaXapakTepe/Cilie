@@ -57,6 +57,7 @@
     }
 
     &__burger--active {
+      padding: 5px;
       background-image: url('../images/icon/close.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -64,6 +65,7 @@
       transition: all 0.3s linear;
 
       &:hover {
+        padding: 5px;
         background-image: url('../images/icon/close-bold.svg');
         background-repeat: no-repeat;
         background-position: center;
@@ -136,6 +138,12 @@
     &__content {
       max-width: 585px;
       margin: 0 auto 45px;
+    }
+  }
+
+  .price-slider {
+    &__content {
+      left: 0;
     }
   }
 
@@ -735,15 +743,18 @@
   }
 
   .popup{
+    &__title {
+      margin-bottom: 0;
+    }
     &__content {
-      bottom: -70px;
-      padding: 35px 5px;
+      top: -30px;
+      padding: 15px 5px;
     }
   }
 
   .confirmation {
     &__content {
-      bottom: -90px;
+      padding: 50px 30px 40px;
     }
   }
 }

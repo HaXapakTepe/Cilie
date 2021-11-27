@@ -107,8 +107,16 @@ $(function () {
     $('.menu__burger').toggleClass('menu__burger--active');
   });
 
+  $('.language__link--en').on('click', function () {
+    $('.language__link--en').toggleClass('en');
+  });
+
   $('.language__link').on('click', function () {
-    $('.language__link').toggleClass('language__link--active');
+    $('.language__link--ru').removeClass('language__link--ru');
+  });
+
+  $('.language__link--ru').on('click', function () {
+    $('.language__link--en').removeClass('en');
   });
 
   $('.faq__subtitle').click(function (event) {
