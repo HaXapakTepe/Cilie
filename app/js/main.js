@@ -79,7 +79,7 @@ $(function () {
   });
 
   $('.star').rateYo({
-    starWidth: "30px",
+    starWidth: "35px",
     normalFill: "#FFFFFF",
     ratedFill: "#F4A446",
     readOnly: true,

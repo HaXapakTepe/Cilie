@@ -10,7 +10,7 @@
   transform: translateX(50%);
   width: 100%;
   z-index: 5;
-  padding: 13px 0 8px;
+  padding: 4px 0 8px;
   background: $bg-header;
 
   &__inner {
@@ -23,7 +23,7 @@
 }
 
 .logo {
-  padding: 3px 0 0 30px;
+  margin: 3px 0 0 33px;
   outline: transparent;
 }
 
@@ -42,20 +42,24 @@
   }
 
   &__item+.menu__item {
-    padding-left: 94px;
+    margin-left: 90px;
   }
 
   &__item {
-    &:nth-child(2) {
-      padding-left: 105px;
+    &:first-child {
+      margin-left: 50px;
     }
 
-    &:first-child {
-      padding-left: 35px;
+    &:nth-child(2) {
+      margin-left: 110px;
+    }
+
+    &:nth-child(5) {
+      margin-left: 85px;
     }
 
     &:last-child {
-      padding-right: 35px;
+      margin-right: 55px;
     }
   }
 
@@ -83,9 +87,11 @@
 }
 
 .language {
-  margin-right: 10px;
+  position: relative;
+  margin-right: 9px;
 
   span {
+    letter-spacing: -10px;
     color: $text;
   }
 
@@ -115,7 +121,7 @@
 }
 
 .top {
-  padding-top: 80px;
+  padding-top: 72px;
   background-image: url("../images/bg-top.png");
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -155,7 +161,7 @@
   padding: 90px 0;
 
   &__container {
-    max-width: 1400px;
+    max-width: 1430px;
   }
 
   &__title {
@@ -165,34 +171,40 @@
   &__inner {
     display: flex;
     justify-content: space-around;
+    margin-left: 15px;
   }
 
-  &__items {
+  &__list {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     max-width: 280px;
+
+    & .info__item-text {
+      &:nth-child(4) {
+        margin-left: 10px;
+      }
+    }
   }
 
   &__item-text {
-    padding-top: 30px;
+    padding-top: 40px;
     @extend %roboto-400;
     font-size: 24px;
     line-height: 28px;
-
 
     &::after {
       content: '';
       display: block;
       width: 213px;
       padding: 2px 0;
-      margin-top: 20px;
+      margin-top: 30px;
       border-radius: 5px;
       background: $accent;
     }
   }
 
-  &__item-text2 {
+  &__item-text-two {
     padding-top: 0;
 
     &::after {
@@ -213,10 +225,11 @@
 }
 
 .top-slider {
+  
   padding-bottom: 90px;
 
   &__container {
-    max-width: 1430px;
+    max-width: 1475px;
   }
 
   &__title {
@@ -226,11 +239,11 @@
   &__content {
     display: flex;
     margin: 0 20px 45px 0;
-    padding-left: 20px;
+    padding-left: 25px;
   }
 
   &__images {
-    margin-right: 70px;
+    margin-right: 48px;
     border-top: 15px solid $accent;
     border-left: 10px solid $accent;
   }
@@ -246,6 +259,7 @@
     @extend %roboto-it-300;
     font-size: 25px;
     line-height: 29px;
+    letter-spacing: -0.7px;
   }
 
   .slick-dots {
@@ -261,7 +275,7 @@
   background-size: cover;
 
   &__container {
-    max-width: 1430px;
+    max-width: 1450px;
   }
 
   &__title {
@@ -269,11 +283,14 @@
   }
 
   &__inner {
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__item {
     max-width: 250px;
+    margin-bottom: 15px;
   }
 
   &__content {
@@ -377,7 +394,7 @@
   padding: 82px 0;
 
   &__container {
-    max-width: 1430px;
+    max-width: 1420px;
   }
 
   &__title {
@@ -437,7 +454,7 @@
 }
 
 .faq {
-  padding: 85px 0 105px;
+  padding: 85px 0 65px;
   background-color: $accent;
 
   &__inner {
@@ -543,6 +560,7 @@
   }
 
   &__info {
+    max-width: 440px;
     padding-top: 55px;
   }
 
@@ -552,9 +570,6 @@
   }
 
   &__info-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50px;
     margin-right: 5px;
   }
