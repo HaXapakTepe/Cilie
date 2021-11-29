@@ -10,7 +10,7 @@
   transform: translateX(50%);
   width: 100%;
   z-index: 5;
-  padding: 4px 0 8px;
+  padding: 12px 0 8px;
   background: $bg-header;
 
   &__inner {
@@ -28,7 +28,6 @@
 }
 
 .menu {
-
   &__btn {
     display: none;
   }
@@ -38,28 +37,23 @@
   }
 
   &__list {
+    width: 1020px;
     display: flex;
-  }
-
-  &__item+.menu__item {
-    margin-left: 90px;
+    justify-content: space-between;
   }
 
   &__item {
-    &:first-child {
-      margin-left: 50px;
-    }
-
     &:nth-child(2) {
-      margin-left: 110px;
+      margin-left: 27px;
     }
 
+    &:nth-child(3) {
+      margin-left: 10px;
+    }
+
+    &:nth-child(4),
     &:nth-child(5) {
-      margin-left: 85px;
-    }
-
-    &:last-child {
-      margin-right: 55px;
+      margin-left: 10px;
     }
   }
 
@@ -87,13 +81,8 @@
 }
 
 .language {
-  position: relative;
   margin-right: 9px;
-
-  span {
-    letter-spacing: -10px;
-    color: $text;
-  }
+  width: 80px;
 
   &__link {
     @extend %roboto-700;
@@ -105,18 +94,40 @@
     &:hover {
       color: $text;
       border-bottom: 3px solid $accent;
+      transition: all 0.3s;
     }
 
     &:focus {
-      border-bottom: 3px solid $accent;
+      color: $text;
+      transition: color 0.3s;
+    }
+
+    &:active {
       color: $text;
       transition: color 0.3s;
     }
   }
 
-  & .language__link--ru {
+  &__link--ru,
+  &__link--active {
     color: $text;
-    border-bottom: 3px solid $accent;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $text;
+      border-bottom: 3px solid $accent;
+      transition: all 0.3s;
+    }
+
+    &:focus {
+      color: $text;
+      transition: color 0.3s;
+    }
+
+    &:active {
+      color: $text;
+      transition: color 0.3s;
+    }
   }
 }
 
@@ -130,12 +141,12 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding: 90px 0 85px;
+    padding: 97px 0 86px;
   }
 
   &__content {
     max-width: 605px;
-    padding: 71px 0 0 15px;
+    padding: 73px 0 0 14px;
   }
 
   &__title {
@@ -143,6 +154,7 @@
     @extend %roboto-700;
     font-size: 55px;
     line-height: 55px;
+    letter-spacing: 1.4px;
   }
 
   &__text {
@@ -171,23 +183,15 @@
   &__inner {
     display: flex;
     justify-content: space-around;
-    margin-left: 15px;
+    
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     max-width: 280px;
-
-    & .info__item-text {
-      &:nth-child(4) {
-        margin-left: 10px;
-      }
-    }
+    padding: 10px;
   }
 
-  &__item-text {
+  &__text {
     padding-top: 40px;
     @extend %roboto-400;
     font-size: 24px;
@@ -196,7 +200,7 @@
     &::after {
       content: '';
       display: block;
-      width: 213px;
+      max-width: 213px;
       padding: 2px 0;
       margin-top: 30px;
       border-radius: 5px;
@@ -204,8 +208,9 @@
     }
   }
 
-  &__item-text-two {
+  &__text-even {
     padding-top: 0;
+    margin-bottom: 40px;
 
     &::after {
       display: none;
@@ -225,8 +230,7 @@
 }
 
 .top-slider {
-  
-  padding-bottom: 90px;
+  padding-bottom: 91px;
 
   &__container {
     max-width: 1475px;
@@ -243,7 +247,7 @@
   }
 
   &__images {
-    margin-right: 48px;
+    margin-right: 53px;
     border-top: 15px solid $accent;
     border-left: 10px solid $accent;
   }
@@ -279,7 +283,7 @@
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   &__inner {
@@ -289,7 +293,7 @@
   }
 
   &__item {
-    max-width: 250px;
+    max-width: 252px;
     margin-bottom: 15px;
   }
 
@@ -299,7 +303,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
 
     &::after {
@@ -347,7 +351,6 @@
   }
 
   &__video {
-    max-width: 250px;
     margin-bottom: 10px;
     outline: transparent;
 
@@ -371,8 +374,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 60px;
-    right: -20px;
+    bottom: 69px;
+    right: -30px;
     width: 70px;
     height: 70px;
     border: 1px solid $accent;
@@ -386,12 +389,13 @@
   }
 
   &__images {
-    margin: 0 0 10px 1px;
+    position: relative;
+    margin-bottom: 20px;
   }
 }
 
 .reviews-slider {
-  padding: 82px 0;
+  padding: 81px 0;
 
   &__container {
     max-width: 1420px;
@@ -454,7 +458,7 @@
 }
 
 .faq {
-  padding: 85px 0 65px;
+  padding: 85px 0 71px;
   background-color: $accent;
 
   &__inner {
@@ -479,6 +483,7 @@
       content: '';
       display: block;
       position: relative;
+      bottom: -5px;
       left: -25px;
       height: 1px;
       margin-bottom: 35px;
@@ -595,7 +600,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 8px 10px 14px;
   }
 
   &__item {
@@ -604,6 +609,7 @@
 
   &__copy {
     @extend %ibmplexsans-400;
+    padding-top: 7px;
     font-size: 24px;
     line-height: 31px;
     color: $default;

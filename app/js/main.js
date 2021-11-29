@@ -92,31 +92,34 @@ $(function () {
     readOnly: true,
   });
 
-
-
   $('.menu__link').on('click', function () {
     $(this).toggleClass('menu__link--active');
     $('.menu__link').not($(this)).removeClass('menu__link--active');
   });
 
-  $('.menu__btn').on('click', function () {
+  $('.menu__burger').on('click', function () {
     $('.menu__list').toggleClass('active');
   });
 
-  $('.menu__btn').on('click', function () {
+  $('.menu__burger').on('click', function () {
     $('.menu__burger').toggleClass('menu__burger--active');
   });
 
-  $('.language__link--en').on('click', function () {
-    $('.language__link--en').toggleClass('en');
+  $('.menu__burger').on('click', function () {
+    $('.logo').toggleClass('logo--active');
+  });
+
+  $('.menu__burger').on('click', function () {
+    $('.menu__text').toggleClass('menu__text--active');
   });
 
   $('.language__link').on('click', function () {
-    $('.language__link--ru').removeClass('language__link--ru');
+    $(this).toggleClass('language__link--active');
+    $('.language__link').not($(this)).removeClass('language__link--active');
   });
 
-  $('.language__link--ru').on('click', function () {
-    $('.language__link--en').removeClass('en');
+  $('.language__link').on('click', function () {
+    $('.language__link').not($(this)).removeClass('language__link--ru');
   });
 
   $('.faq__subtitle').click(function (event) {
