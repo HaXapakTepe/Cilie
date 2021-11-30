@@ -133,23 +133,23 @@ $(function () {
   $('.popup__open').click(function (e) {
     e.preventDefault();
     $('.popup').fadeIn(500);
-    $('html').addClass('no-scroll');
+    $('html').addClass('no-scroll-popup');
   });
 
   $('.popup__close').click(function () {
     $('.popup').fadeOut(500);
-    $('html').removeClass('no-scroll');
+    $('html').removeClass('no-scroll-popup');
   });
 
   $('.popup__btn').click(function (e) {
     e.preventDefault();
     $('.confirmation').fadeIn(500);
-    $('html').addClass('no-scroll-two');
+    $('html').addClass('no-scroll-confirmation');
   });
 
   $('.confirmation__close').click(function () {
     $('.confirmation').fadeOut(500);
-    $('html').removeClass('no-scroll-two');
+    $('html').removeClass('no-scroll-confirmation');
   });
 
 });
