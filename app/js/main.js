@@ -119,7 +119,7 @@ $(function () {
   });
 
   $('.language__link').on('click', function () {
-    $('.language__link').not($(this)).removeClass('language__link--ru');
+    $('.language__link').not($(this)).removeClass('language__link--ru language__link--active');
   });
 
   $('.faq__subtitle').click(function (event) {

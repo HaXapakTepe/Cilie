@@ -19,6 +19,7 @@
     &__content {
       order: 1;
       padding-left: 0;
+      text-align: center;
     }
   }
 
@@ -113,7 +114,6 @@
 
     &__content {
       padding: 35px 0 0 10px;
-      text-align: center;
     }
 
     &__text {
@@ -150,6 +150,9 @@
   .faq {
     &__inner {
       margin-left: 25px;
+    }
+    &__item {
+      margin-left: 20px;
     }
   }
 
@@ -253,7 +256,7 @@
       position: absolute;
       min-width: 136px;
       right: -170px;
-      top: 45px;
+      top: 55px;
       opacity: 1;
       text-align: left;
       background-color: transparent;
@@ -323,7 +326,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .top {
     &__inner {
       padding-bottom: 30px;
@@ -364,12 +367,48 @@
       line-height: 19px;
     }
   }
+
+  .faq {
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__item {
+      &::marker {
+        font-size: 15px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 15px;
+
+      &::before,
+      &::after {
+        top: 15px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 12px;
+    }
+  }
+
+  .star {
+    display: none;
+  }
+
+  .star-adaptive {
+    display: block;
+  }
 }
 
 @media (max-width: 450px) {
   .header {
     padding: 12px 0;
   }
+
   .top {
     &__container {
       padding: 0;
@@ -493,46 +532,10 @@
       font-size: 14px;
       line-height: 16px;
     }
-
-  }
-
-  .faq {
-    &__title {
-      font-size: 18px;
-      line-height: 21px;
-    }
-
-    &__item {
-      &::marker {
-        font-size: 15px;
-      }
-    }
-
-    &__subtitle {
-      font-size: 15px;
-
-      &::before,
-      &::after {
-        top: 15px;
-      }
-    }
-
-    &__text {
-      font-size: 14px;
-      line-height: 12px;
-    }
-  }
-
-  .star {
-    display: none;
-  }
-
-  .star-adaptive {
-    display: block;
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .title {
     margin-bottom: 25px;
     font-size: 18px;
@@ -553,13 +556,13 @@
 
     .logo--active {
       position: absolute;
-      bottom: 0;
+      bottom: 35px;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       margin: 0;
       z-index: 6;
     }
-    
+
   }
 
   .menu {
@@ -583,35 +586,37 @@
     }
 
     &__list {
+      display: none;
       top: 10px;
       transition: all 0s;
 
       &.active {
+        display: block;
+        height: 100vh;
         position: relative;
         width: 100%;
         text-align: center;
         transform: translateY(10px);
         transition: all 0s;
-
       }
     }
 
     &__item {
       padding: 10px 0 0;
+      margin: 0;
 
       &+.menu__item {
-        padding: 15px 0 0;
-        margin: 0 0 10px 0;
+        margin: 0;
       }
 
       &:first-child {
-        padding: 30px 0 0 0;
+        padding: 20px 0 0 0;
       }
+    }
 
-      &:last-child {
-        margin-bottom: 205px;
-      }
-
+    &__link {
+      display: block;
+      padding: 10px 0;
     }
   }
 

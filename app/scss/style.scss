@@ -87,6 +87,7 @@
   &__link {
     @extend %roboto-700;
     color: $language;
+    // color: $text;
     border-bottom: 3px solid transparent;
     transition: all 0.3s;
     outline: transparent;
@@ -99,19 +100,19 @@
 
     &:focus {
       color: $text;
-      transition: color 0.3s;
+      transition: all 0.3s;
     }
 
     &:active {
       color: $text;
-      transition: color 0.3s;
+      transition: all 0.3s;
     }
   }
 
   &__link--ru,
   &__link--active {
     color: $text;
-    transition: color 0.3s;
+    transition: all 0.3s;
 
     &:hover {
       color: $text;
@@ -121,12 +122,12 @@
 
     &:focus {
       color: $text;
-      transition: color 0.3s;
+      transition: all 0.3s;
     }
 
     &:active {
       color: $text;
-      transition: color 0.3s;
+      transition: all 0.3s;
     }
   }
 }
