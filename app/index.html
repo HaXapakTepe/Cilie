@@ -6,6 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cilie</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#3e3832">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,9 +27,9 @@
       <nav class="menu">
         <div class="menu__btn">
           <div class="menu__burger"></div>
-          <div class="menu__text">
+          <span class="menu__text">
             Меню
-          </div>
+          </span>
         </div>
         <ul class="menu__list">
           <li class="menu__item">
@@ -46,8 +53,8 @@
         </ul>
       </nav>
       <div class="language">
-        <a class="language__link language__link--active" href="#">RU</a>
-        <span>|</span>
+        <a class="language__link language__link--ru" href="#">RU</a>
+        <span class="language__separation">|</span>
         <a class="language__link" href="#">EN</a>
       </div>
     </div>
@@ -81,37 +88,29 @@
           О компании
         </h2>
         <div class="info__inner">
-          <div class="info__items">
-            <div class="info__item">
-              <img class="info__item-images" src="images/info/1.jpg" alt="images">
-            </div>
-            <p class="info__item-text">
+          <div class="info__list">
+              <img class="info__images" src="images/info/1.jpg" alt="images">
+            <p class="info__text">
               Используем только гипоаллергенные материалы, безопасные для Вашего здоровья!
             </p>
           </div>
-          <div class="info__items">
-            <p class="info__item-text info__item-text2">
+          <div class="info__list">
+            <p class="info__text info__text-even">
               Экономим ваше время и наращиваем на 20 мин меньше, чем в других студиях!
             </p>
-            <div class="info__item2">
-              <img class="info__item-images" src="images/info/2.jpg" alt="images">
-            </div>
+              <img class="info__images" src="images/info/2.jpg" alt="images">
           </div>
-          <div class="info__items">
-            <div class="info__item">
-              <img class="info__item-images" src="images/info/3.jpg" alt="images">
-            </div>
-            <p class="info__item-text">
+          <div class="info__list">
+              <img class="info__images" src="images/info/3.jpg" alt="images">
+            <p class="info__text">
               У нас удобная ортопедическая мебель, никакого дискомформа во время процедуры!
             </p>
           </div>
-          <div class="info__items">
-            <p class="info__item-text info__item-text2">
+          <div class="info__list">
+            <p class="info__text info__text-even">
               Мастера только с многолетним опытом работы в сфере наращивания ресниц!
             </p>
-            <div class="info__item2">
-              <img class="info__item-images" src="images/info/4.jpg" alt="images">
-            </div>
+              <img class="info__images" src="images/info/4.jpg" alt="images">
           </div>
         </div>
       </div>
@@ -253,157 +252,157 @@
         </h2>
         <div class="price-slider__inner">
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Эффект 2D
-              </p>
-              <span class="price-slider__text">
-                Наращивание на 1 свою, 2 искуственных ресницы
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=8b0DGI8xpWw&ab_channel=EVALORMAN">
-                <img class="price-slider__images" src="images/price/1.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">2000₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Эффект 2D
+                </p>
+                <span class="price-slider__text">
+                  Наращивание на 1 свою, 2 искуственных ресницы
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=8b0DGI8xpWw&ab_channel=EVALORMAN">
+                  <img class="price-slider__images" src="images/price/1.jpg" alt="video play button">
+                  <div class="price-slider__cost">2000₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Голливуд
-              </p>
-              <span class="price-slider__text">
-                Наращивание на 1 свою, 1 искуственную ресницу
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=-ixicKbWync&ab_channel=%D0%98%D0%9B%D0%AC%D0%94%D0%95%D0%91%D0%9E%D0%A2%D0%AD">
-                <img class="price-slider__images" src="images/price/2.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">3000₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Голливуд
+                </p>
+                <span class="price-slider__text">
+                  Наращивание на 1 свою, 1 искуственную ресницу
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=-ixicKbWync&ab_channel=%D0%98%D0%9B%D0%AC%D0%94%D0%95%D0%91%D0%9E%D0%A2%D0%AD">
+                  <img class="price-slider__images" src="images/price/2.jpg" alt="video play button">
+                  <div class="price-slider__cost">3000₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Эффект 3D
-              </p>
-              <span class="price-slider__text">
-                Наращивание любого эффекта с увеличением объема ресниц к уголкам глаз.
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=Ol3SqVCevGs&ab_channel=faberinfo">
-                <img class="price-slider__images" src="images/price/3.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">2500₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Эффект 3D
+                </p>
+                <span class="price-slider__text">
+                  Наращивание любого эффекта с увеличением объема ресниц к уголкам глаз.
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=Ol3SqVCevGs&ab_channel=faberinfo">
+                  <img class="price-slider__images" src="images/price/3.jpg" alt="video play button">
+                  <div class="price-slider__cost">2500₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Классика
-              </p>
-              <span class="price-slider__text">
-                Наращивание на 1 свою, 2 искуственных ресницы без распушевки пучка.
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=RBmfM9xfWpQ&ab_channel=IrenSkudarnova">
-                <img class="price-slider__images" src="images/price/4.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">1500₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Классика
+                </p>
+                <span class="price-slider__text">
+                  Наращивание на 1 свою, 2 искуственных ресницы без распушевки пучка.
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=RBmfM9xfWpQ&ab_channel=IrenSkudarnova">
+                  <img class="price-slider__images" src="images/price/4.jpg" alt="video play button">
+                  <div class="price-slider__cost">1500₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Лисий эффект
-              </p>
-              <span class="price-slider__text">
-                Наращивание любого эффекта с увеличением объема ресниц к центру глаза
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=X1Rv_uZEtSY&ab_channel=SWASTIJII">
-                <img class="price-slider__images" src="images/price/5.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">2000₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Лисий эффект
+                </p>
+                <span class="price-slider__text">
+                  Наращивание любого эффекта с увеличением объема ресниц к центру глаза
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=X1Rv_uZEtSY&ab_channel=SWASTIJII">
+                  <img class="price-slider__images" src="images/price/5.jpg" alt="video play button">
+                  <div class="price-slider__cost">2000₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Мокрый эффект
-              </p>
-              <span class="price-slider__text">
-                Наращивание любого объема с использованием цветных ресничек
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=uwRo4wRK4n0&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%93%D0%B0%D0%BB%D0%B0%D1%81%D0%B8%D0%BD%D0%B0">
-                <img class="price-slider__images" src="images/price/6.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">3000₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Мокрый эффект
+                </p>
+                <span class="price-slider__text">
+                  Наращивание любого объема с использованием цветных ресничек
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=uwRo4wRK4n0&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%93%D0%B0%D0%BB%D0%B0%D1%81%D0%B8%D0%BD%D0%B0">
+                  <img class="price-slider__images" src="images/price/6.jpg" alt="video play button">
+                  <div class="price-slider__cost">3000₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Беличий эффект
-              </p>
-              <span class="price-slider__text">
-                Наращивание на 1 свою, 3 искуственных ресницы
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=84xRrY7m25o&ab_channel=Lovely_lush">
-                <img class="price-slider__images" src="images/price/7.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">3200₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Беличий эффект
+                </p>
+                <span class="price-slider__text">
+                  Наращивание на 1 свою, 3 искуственных ресницы
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=84xRrY7m25o&ab_channel=Lovely_lush">
+                  <img class="price-slider__images" src="images/price/7.jpg" alt="video play button">
+                  <div class="price-slider__cost">3200₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <p class="price-slider__subtitle">
-                Цветной эффект
-              </p>
-              <span class="price-slider__text">
-                Наращивание на 1 свою, 2 искуственных ресницы
-              </span>
-              <a class="price-slider__video" data-fancybox
-                href="https://www.youtube.com/watch?v=jcrydiVVBMM&ab_channel=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%D0%B5%D0%91%D1%80%D0%BE%D0%B2%D0%B8">
-                <img class="price-slider__images" src="images/price/8.jpg" alt="video play button">
-              </a>
-              <div class="price-slider__cost">2800₽</div>
-              <a class="link popup__open" href="#">
-                Записаться
-              </a>
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <p class="price-slider__subtitle">
+                  Цветной эффект
+                </p>
+                <span class="price-slider__text">
+                  Наращивание на 1 свою, 2 искуственных ресницы
+                </span>
+                <a class="price-slider__video" data-fancybox
+                  href="https://www.youtube.com/watch?v=jcrydiVVBMM&ab_channel=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%D0%B5%D0%91%D1%80%D0%BE%D0%B2%D0%B8">
+                  <img class="price-slider__images" src="images/price/8.jpg" alt="video play button">
+                  <div class="price-slider__cost">2800₽</div>
+                </a>
+                <a class="link popup__open" href="#">
+                  Записаться
+                </a>
+              </div>
             </div>
-          </div>
 
         </div>
       </div>
@@ -426,8 +425,8 @@
                   Уютная студия и прекрасные мастера!
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -444,8 +443,8 @@
                   Уютная студия и прекрасные мастера!
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="5"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="5">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="5"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="5">
               </div>
             </div>
           </div>
@@ -462,8 +461,8 @@
                   Замечательные девушки, очень вежливый персонал. Реснички держались почти 3 недели.
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -480,8 +479,8 @@
                   Замечательные девушки, очень вежливый персонал. Реснички держались почти 3 недели.
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="5"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="5">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="5"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="5">
               </div>
             </div>
           </div>
@@ -498,8 +497,8 @@
                   Долго не решалась на первое наращивание, но после посещения студии решила, что однозначно вернусь!))))
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -516,8 +515,8 @@
                   Прекрасная студия, все понравилось
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -534,8 +533,8 @@
                   Хороший сервис и качественная работа
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -552,8 +551,8 @@
                   Классно, очень понравилогсь
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -570,8 +569,8 @@
                   Хорошая студия))
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -588,8 +587,8 @@
                   Все понравилось, точно вернусь!
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -606,8 +605,8 @@
                   Очень внимательные и опытные мастера
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -624,8 +623,8 @@
                   Замечательные девушки, очень вежливый персонал. Наращивание продержалось долго
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -642,8 +641,8 @@
                   Прекрасные качественные работы
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -660,8 +659,8 @@
                   Уютная студия и прекрасные мастера! Реснички держались долго
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -678,8 +677,8 @@
                   Замечательные девушки, очень вежливый персонал. Реснички держались почти 3 недели.
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -696,8 +695,8 @@
                   Студия рядом с метро, очень удобно
                 </p>
               </div>
-              <div class="star" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="5px" data-rateyo-rating="4">
+              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
               </div>
             </div>
           </div>
@@ -718,7 +717,6 @@
               <p class="faq__subtitle">
                 Что не рекомендуется делать после наращивания ресниц?
               </p>
-              <!-- <div class="faq__arrow"></div> -->
               <p class="faq__text">
                 Вытирать ресницы полотенцем не рекомендуется. Достаточно просто промокнуть их. После водных процедур
                 просушивать ресницы, т. к. влага негативно воздействует на клей. Для просушки рекомендуется пользоваться
@@ -730,7 +728,6 @@
               <p class="faq__subtitle">
                 Сколько держится эффект?
               </p>
-              <!-- <div class="faq__arrow"></div> -->
               <p class="faq__text">
                 Первичное наращивание ресниц покажет, сколько держится эффект. Он должен сохраниться в пределах от 2
                 недель до 1,5-2 месяцев (при разных условиях и при разном уходе за ними).
@@ -741,7 +738,6 @@
               <p class="faq__subtitle">
                 Как ухаживать за ресницами?
               </p>
-              <!-- <div class="faq__arrow"></div> -->
               <p class="faq__text">
                 За ресницами ухаживать достаточно просто: Глаза промывайте обычной, чуть теплой водой. Если вы
                 пользуетесь
@@ -753,7 +749,6 @@
               <p class="faq__subtitle">
                 Обязательно ли снимать ресницы в салоне?
               </p>
-              <!-- <div class="faq__arrow"></div> -->
               <p class="faq__text">
                 Благодаря снятию ресниц в салоне вам удастся сохранить красивый и здоровый вид родных волосков. Более
                 того, это единственный вариант достижения данной цели. Мастера в салоне обладают специальной техникой.
@@ -837,8 +832,8 @@
   <div class="popup">
     <div class="popup__body">
       <a class="popup__area" href="#header"></a>
-      <div class="popup__content">
-        <!-- <img class="popup__close" src="images/icon/close.svg" alt="icon close"> -->
+      <form class="popup__content">
+        <img class="popup__close" src="images/icon/close.svg" alt="icon close">
         <p class="popup__title title">Подписаться</p>
         <p class="popup__text">
           ФИО
@@ -852,6 +847,9 @@
           Выберите наращивание
         </p>
         <select class="popup__input" tabindex="3" name="effects" placeholder="Выберите наращивание">
+          <option class="popup__option popup__option--first" value="" default disabled selected>
+            Выберите наращивание
+          </option>
           <option class="popup__option" value="Эффект 2D">
             Эффект 2D
           </option>
@@ -861,7 +859,7 @@
           <option class="popup__option" value="Эффект 3D">
             Эффект 3D
           </option>
-          <option class="popup__option" selected value="Классика">
+          <option class="popup__option" value="Классика">
             Классика
           </option>
           <option class="popup__option" value="Лисий эффект">
@@ -881,31 +879,67 @@
           Выберите мастера
         </p>
         <select class="popup__input" tabindex="4" name="masters" placeholder="Выберите мастера" required>
-          <option class="popup__option" value="Романова Джулия">Романова Джулия</option>
-          <option class="popup__option" value="Карамзина Лилия">Карамзина Лилия</option>
-          <option class="popup__option" value="Хорошева Инна">Хорошева Инна</option>
-          <option class="popup__option" value="Чупина Олеся">Чупина Олеся</option>
-          <option class="popup__option" value="Котова Дарья">Котова Дарья</option>
-          <option class="popup__option" selected value="Рыжова Елизавета">Рыжова Елизавета</option>
-          <option class="popup__option" value="Зотова Анна">Зотова Анна</option>
-          <option class="popup__option" value=Иванова Юлия"">Иванова Юлия</option>
-          <option class="popup__option" value="Абрамова Ольга">Абрамова Ольга</option>
-          <option class="popup__option" value="Иванова Елена">Иванова Елена</option>
-          <option class="popup__option" value="Крылова Дарья">Крылова Дарья</option>
-          <option class="popup__option" value="Сушина Анастасия">Сушина Анастасия</option>
-          <option class="popup__option" value=Симонова Елена"">Симонова Елена</option>
-          <option class="popup__option" value="Кускова Мила">Кускова Мила</option>
-          <option class="popup__option" value="Юшина Анна">Юшина Анна</option>
-          <option class="popup__option" value="Левина Ольга">Левина Ольга</option>
+          <option class="popup__option popup__option--first" value="" default disabled selected>
+            Выберите мастера
+          </option>
+          <option class="popup__option" value="Романова Джулия">
+            Романова Джулия
+          </option>
+          <option class="popup__option" value="Карамзина Лилия">
+            Карамзина Лилия
+          </option>
+          <option class="popup__option" value="Хорошева Инна">
+            Хорошева Инна
+          </option>
+          <option class="popup__option" value="Чупина Олеся">
+            Чупина Олеся
+          </option>
+          <option class="popup__option" value="Котова Дарья">
+            Котова Дарья
+          </option>
+          <option class="popup__option" value="Рыжова Елизавета">
+            Рыжова Елизавета
+          </option>
+          <option class="popup__option" value="Зотова Анна">
+            Зотова Анна
+          </option>
+          <option class="popup__option" value=Иванова Юлия"">
+            Иванова Юлия
+          </option>
+          <option class="popup__option" value="Абрамова Ольга">
+            Абрамова Ольга
+          </option>
+          <option class="popup__option" value="Иванова Елена">
+            Иванова Елена
+          </option>
+          <option class="popup__option" value="Крылова Дарья">
+            Крылова Дарья
+          </option>
+          <option class="popup__option" value="Сушина Анастасия">
+            Сушина Анастасия
+          </option>
+          <option class="popup__option" value=Симонова Елена"">
+            Симонова Елена
+          </option>
+          <option class="popup__option" value="Кускова Мила">
+            Кускова Мила
+          </option>
+          <option class="popup__option" value="Юшина Анна">
+            Юшина Анна
+          </option>
+          <option class="popup__option" value="Левина Ольга">
+            Левина Ольга
+          </option>
         </select>
         <input class="popup__btn" type="submit" value="Готово">
-      </div>
+      </form>
     </div>
   </div>
 
   <div class="confirmation">
     <div class="confirmation__body">
       <div class="confirmation__content">
+        <img class="confirmation__close" src="images/icon/close.svg" alt="icon close">
         <p class="confirmation__title title">
           Вы записаны!
         </p>

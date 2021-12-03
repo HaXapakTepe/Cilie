@@ -1,7 +1,11 @@
 @media (max-width: 1250px) {
+  .logo {
+    margin-left: 10px;
+  }
+
   .menu {
-    &__item+.menu__item {
-      padding-left: 50px;
+    &__list {
+      width: 800px;
     }
   }
 
@@ -15,17 +19,7 @@
     &__content {
       order: 1;
       padding-left: 0;
-    }
-  }
-
-  .info {
-    &__items {
-      padding: 0 10px;
-      margin-bottom: 30px;
-    }
-
-    &__inner {
-      flex-wrap: wrap;
+      text-align: center;
     }
   }
 
@@ -57,6 +51,7 @@
     }
 
     &__burger--active {
+      padding: 5px;
       background-image: url('../images/icon/close.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -64,6 +59,7 @@
       transition: all 0.3s linear;
 
       &:hover {
+        padding: 5px;
         background-image: url('../images/icon/close-bold.svg');
         background-repeat: no-repeat;
         background-position: center;
@@ -73,6 +69,7 @@
     }
 
     &__list {
+      visibility: hidden;
       flex-direction: column;
       position: absolute;
       top: 53px;
@@ -84,15 +81,16 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-color: $default;
-      transform: translateY(-200%);
+      transform: translateY(27px);
+      transition: all 0.5s;
+      opacity: 0;
 
       &.active {
-        transform: translateY(28px);
+        visibility: visible;
+        transform: translateY(27px);
+        opacity: 1;
+        transition: all 0.5s;
       }
-    }
-
-    &__item+.menu__item {
-      padding-left: 10px;
     }
 
     &__item {
@@ -116,11 +114,21 @@
 
     &__content {
       padding: 35px 0 0 10px;
-      text-align: center;
     }
 
     &__text {
       margin-bottom: 45px;
+    }
+  }
+
+  .info {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 23px;
     }
   }
 
@@ -133,9 +141,18 @@
     }
   }
 
+  .price-slider {
+    &__content {
+      left: 0;
+    }
+  }
+
   .faq {
     &__inner {
       margin-left: 25px;
+    }
+    &__item {
+      margin-left: 20px;
     }
   }
 
@@ -150,6 +167,16 @@
   .title {
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .top,
+  .info,
+  .top-slider,
+  .price-slider,
+  .reviews-slider,
+  .faq,
+  .contact {
+    padding: 60px 0;
   }
 
   .top {
@@ -169,15 +196,10 @@
   }
 
   .info {
-    padding: 60px 0;
-
     &__inner {
-      justify-content: center;
-    }
-
-    &__item-text {
-      font-size: 20px;
-      line-height: 23px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
     }
   }
 
@@ -198,44 +220,72 @@
   }
 
   .price-slider {
-    padding: 60px 0;
-
-    &__title {
-      margin-bottom: 30px;
+    &__inner {
+      padding-left: 0;
     }
 
     &__item {
-      margin: 0;
+      position: relative;
+      padding: 0 10px;
+      left: 30%;
+      max-width: 250px;
+      transform: translateX(-50%);
+    }
+
+    &__content {
+      padding-top: 1px;
     }
 
     &__subtitle {
-      font-size: 20px;
-      line-height: 23px;
-    }
-  }
+      position: absolute;
+      order: 1;
+      right: -145px;
+      min-width: 126px;
+      padding-top: 1px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.2em;
 
-  .reviews-slider {
-    padding: 60px 0;
-  }
-
-  .faq {
-    padding: 60px 0;
-
-    &__item {
-      &::before {
-        top: 6px;
+      &::after {
+        left: 0;
+        top: 24px;
       }
     }
 
-    &__subtitle {
+    &__text {
+      position: absolute;
+      min-width: 136px;
+      right: -170px;
+      top: 55px;
+      opacity: 1;
+      text-align: left;
+      background-color: transparent;
+      font-size: 12px;
+      line-height: 1.2em;
+
+      &:not(:hover) {
+        pointer-events: none;
+      }
+    }
+
+    &__cost {
+      right: 0;
+      bottom: 0;
+    }
+
+    .link {
+      position: absolute;
+      max-width: 151px;
+      padding: 0 15px;
+      bottom: -19px;
+      right: -165px;
       font-size: 20px;
+      line-height: 1.2em;
     }
 
   }
 
   .contact {
-    padding: 60px 0;
-
     &__inner {
       flex-direction: column;
     }
@@ -250,7 +300,7 @@
     }
 
     &__info-text {
-      max-width: 250px;
+      max-width: 240px;
       font-size: 20px;
       line-height: 23px;
     }
@@ -276,35 +326,7 @@
   }
 }
 
-@media (max-width: 750px) {
-  .price-slider {
-    &__item {
-      position: relative;
-      left: 50%;
-      transform: translate(-50%, 0%);
-    }
-  }
-}
-
-@media (max-width: 590px) {
-  .info {
-    &__items {
-      max-width: 160px;
-    }
-
-    &__item-text {
-      font-size: 16px;
-      line-height: 19px;
-
-      &::after,
-      &::before {
-        width: 150px;
-      }
-    }
-  }
-}
-
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .top {
     &__inner {
       padding-bottom: 30px;
@@ -313,6 +335,19 @@
     &__content {
       padding-top: 20px;
       text-align: center;
+    }
+  }
+
+  .info {
+    font-size: 20px;
+    line-height: 20px;
+
+    &__text {
+
+      &::after,
+      &::before {
+        width: 150px;
+      }
     }
   }
 
@@ -332,9 +367,48 @@
       line-height: 19px;
     }
   }
+
+  .faq {
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__item {
+      &::marker {
+        font-size: 15px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 15px;
+
+      &::before,
+      &::after {
+        top: 15px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 12px;
+    }
+  }
+
+  .star {
+    display: none;
+  }
+
+  .star-adaptive {
+    display: block;
+  }
 }
 
 @media (max-width: 450px) {
+  .header {
+    padding: 12px 0;
+  }
+
   .top {
     &__container {
       padding: 0;
@@ -342,13 +416,13 @@
 
     &__inner {
       flex-direction: inherit;
-      padding: 81px 0 0;
+      padding: 11px 0 0;
     }
 
     &__title {
       position: absolute;
       top: -65px;
-      width: 280px;
+      width: 305px;
       padding-left: 5px;
       font-size: 27px;
       line-height: 27px;
@@ -374,22 +448,13 @@
 
     &__images--adaptive {
       display: block;
+      width: 162px;
     }
   }
 
   .link {
     margin: 0 5px 15px;
     font-size: 20px;
-  }
-
-  .info {
-    &__item-text {
-
-      &::after,
-      &::before {
-        width: 150px;
-      }
-    }
   }
 
   .reviews-slider {
@@ -408,32 +473,65 @@
     }
   }
 
-  .faq {
-    &__title {
-      font-size: 18px;
-      line-height: 21px;
+  .price-slider {
+    padding: 40px 0;
+
+    &__inner {
+      padding-left: 0;
+    }
+
+    &__content {
+      width: 70%;
+      margin: 0 20px;
+    }
+
+    &__item {
+      position: relative;
+      padding: 0 10px;
+      left: 30%;
+      max-width: 250px;
+      transform: translateX(-50%);
     }
 
     &__subtitle {
+      position: absolute;
+      order: 1;
+      right: -145px;
+      min-width: 126px;
+      padding-top: 1px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.2em;
 
-      &::before,
       &::after {
-        top: 15px;
+        left: 0;
+        top: 24px;
       }
     }
 
     &__text {
-      font-size: 14px;
-      line-height: 12px;
+      position: absolute;
+      min-width: 136px;
+      right: -170px;
+      top: 45px;
+      opacity: 1;
+      text-align: left;
+      background-color: transparent;
+      font-size: 12px;
+      line-height: 1.2em;
+
+      &:not(:hover) {
+        pointer-events: none;
+      }
     }
-  }
 
-  .star {
-    display: none;
-  }
-
-  .star-adaptive {
-    display: block;
+    &__cost {
+      right: 0;
+      width: 53px;
+      height: 51px;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -445,51 +543,80 @@
   }
 
   .header {
+
     &__inner {
       display: block;
     }
-  }
 
-  .logo {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    padding: 0;
-    z-index: 6;
-    transform: translate(-50%, -100%);
+    .logo {
+      position: absolute;
+      bottom: 0;
+      z-index: 6;
+    }
+
+    .logo--active {
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      margin: 0;
+      z-index: 6;
+    }
+
   }
 
   .menu {
     &__btn {
-      display: flex;
-      justify-content: space-between;
+      position: relative;
+      right: 0;
     }
 
     &__burger {
-      order: 1;
+      margin-left: auto;
     }
 
-    &__text {
+    &__text--active {
       display: block;
-      padding: 0 0 0 15px;
+      position: absolute;
+      top: 5px;
+      left: 20px;
       font-size: 20px;
       line-height: 23px;
       color: $btn;
     }
 
     &__list {
+      display: none;
       top: 10px;
-      height: 670px;
+      transition: all 0s;
 
       &.active {
+        display: block;
+        height: 100vh;
         position: relative;
         width: 100%;
         text-align: center;
+        transform: translateY(10px);
+        transition: all 0s;
       }
     }
 
-    &__item+.menu__item {
-      padding-left: 0;
+    &__item {
+      padding: 10px 0 0;
+      margin: 0;
+
+      &+.menu__item {
+        margin: 0;
+      }
+
+      &:first-child {
+        padding: 20px 0 0 0;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 10px 0;
     }
   }
 
@@ -497,16 +624,16 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+    margin: 0;
     z-index: 6;
-    margin: 0 30px 0 auto;
-    transform: translate(-50%, -1000%);
+    transform: translate(-50%, -500%);
     transition: all 0.3s;
   }
 
   .top {
     &__title {
       top: -50px;
-      width: 220px;
+      width: 235px;
       font-size: 20px;
       line-height: 20px;
     }
@@ -521,90 +648,68 @@
     }
   }
 
-  .info {
+  .top,
+  .info,
+  .top-slider,
+  .reviews-slider,
+  .faq,
+  .contact {
     padding: 40px 0;
   }
 
-  .price-slider {
-    padding: 40px 0;
-
-    &__item {
-      max-width: 298px;
-    }
-
-    &__content {
-      display: flex;
-    }
-
-    &__subtitle {
-      order: 1;
-      position: relative;
-      right: 115px;
-      min-width: 126px;
-      text-align: left;
-      font-size: 16px;
-      line-height: 19px;
-    }
-
+  .info {
     &__text {
-      position: absolute;
-      min-width: 112px;
-      right: -10px;
-      top: 27px;
-      opacity: 1;
-      text-align: left;
-      background-color: transparent;
-      font-size: 10px;
-      line-height: 13px;
+      font-size: 14px;
+      line-height: 17px;
 
-      &:not(:hover) {
-        pointer-events: none;
+      &::after,
+      &::before {
+        width: 120px;
+      }
+    }
+  }
+
+  .price-slider {
+    &__content {
+      width: 50%;
+      margin: 0 35px;
+    }
+
+    .link {
+      max-width: 130px;
+      right: -150px;
+    }
+  }
+
+  .reviews-slider {
+    &__title {
+      &::after {
+        top: 270px;
       }
     }
 
-    &__information {
-      top: 22px;
-      right: 105px;
+    &__item {
+      height: 200px;
     }
 
-    &__popup {
-      min-width: 160px;
-      margin-right: 10px;
-      height: 175px;
-    }
-
-    &__play {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &__cost {
-      right: 0;
-      width: 53px;
-      height: 51px;
+    &__text {
       font-size: 14px;
-      line-height: 16px;
+      line-height: 17px;
     }
 
-    &__link {
-      margin: auto 0 10px 0;
-      padding: 0 5px;
-      line-height: 23px;
+    &__name {
+      font-size: 15px;
+      line-height: 18px;
     }
   }
 
   .faq {
-    padding: 40px 0;
-
     &__arrow {
       top: 32px;
     }
   }
 
   .contact {
-    padding: 40px 0;
-
     &__container {
       padding: 0;
     }
@@ -614,6 +719,7 @@
     }
 
     &__info-text {
+      width: 200px;
       font-size: 16px;
       line-height: 19px;
     }
@@ -627,6 +733,7 @@
       max-width: 375px;
       height: 245px;
     }
+
   }
 
   .footer {
@@ -639,14 +746,21 @@
       line-height: 16px;
     }
   }
-}
 
-@media (max-width: 360px) {
-  .reviews-slider {
+  .popup {
     &__title {
-      &::after {
-        top: 345px;
-      }
+      margin-bottom: 0;
+    }
+
+    &__content {
+      top: -30px;
+      padding: 15px 5px;
+    }
+  }
+
+  .confirmation {
+    &__content {
+      padding: 50px 30px 40px;
     }
   }
 }

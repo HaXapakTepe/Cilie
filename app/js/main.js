@@ -42,7 +42,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 750,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -79,7 +79,7 @@ $(function () {
   });
 
   $('.star').rateYo({
-    starWidth: "30px",
+    starWidth: "35px",
     normalFill: "#FFFFFF",
     ratedFill: "#F4A446",
     readOnly: true,
@@ -92,20 +92,34 @@ $(function () {
     readOnly: true,
   });
 
-  $('.menu__item').on('click', function () {
-    $('.menu__link').toggleClass('menu__link--active');
+  $('.menu__link').on('click', function () {
+    $(this).toggleClass('menu__link--active');
+    $('.menu__link').not($(this)).removeClass('menu__link--active');
   });
 
-  $('.menu__btn').on('click', function () {
+  $('.menu__burger').on('click', function () {
     $('.menu__list').toggleClass('active');
   });
 
-  $('.menu__btn').on('click', function () {
+  $('.menu__burger').on('click', function () {
     $('.menu__burger').toggleClass('menu__burger--active');
   });
 
+  $('.menu__burger').on('click', function () {
+    $('.logo').toggleClass('logo--active');
+  });
+
+  $('.menu__burger').on('click', function () {
+    $('.menu__text').toggleClass('menu__text--active');
+  });
+
   $('.language__link').on('click', function () {
-    $('.language__link').toggleClass('language__link--active');
+    $(this).toggleClass('language__link--active');
+    $('.language__link').not($(this)).removeClass('language__link--active');
+  });
+
+  $('.language__link').on('click', function () {
+    $('.language__link').not($(this)).removeClass('language__link--ru language__link--active');
   });
 
   $('.faq__subtitle').click(function (event) {
@@ -119,12 +133,23 @@ $(function () {
   $('.popup__open').click(function (e) {
     e.preventDefault();
     $('.popup').fadeIn(500);
-    $('html').addClass('no-scroll');
+    $('html').addClass('no-scroll-popup');
   });
 
   $('.popup__close').click(function () {
     $('.popup').fadeOut(500);
-    $('html').removeClass('no-scroll');
+    $('html').removeClass('no-scroll-popup');
+  });
+
+  $('.popup__btn').click(function (e) {
+    e.preventDefault();
+    $('.confirmation').fadeIn(500);
+    $('html').addClass('no-scroll-confirmation');
+  });
+
+  $('.confirmation__close').click(function () {
+    $('.confirmation').fadeOut(500);
+    $('html').removeClass('no-scroll-confirmation');
   });
 
 });
