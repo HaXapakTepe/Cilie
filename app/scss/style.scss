@@ -10,7 +10,7 @@
   transform: translateX(50%);
   width: 100%;
   z-index: 5;
-  padding: 12px 0 8px;
+  padding: 12px 10px 8px;
   background: $bg-header;
 
   &__inner {
@@ -28,7 +28,7 @@
 }
 
 .menu {
-  &__btn {
+  &__burger {
     display: none;
   }
 
@@ -81,13 +81,13 @@
 }
 
 .language {
-  margin-right: 9px;
   width: 80px;
+  margin-right: 9px;
+  text-transform: uppercase;
 
   &__link {
     @extend %roboto-700;
     color: $language;
-    // color: $text;
     border-bottom: 3px solid transparent;
     transition: all 0.3s;
     outline: transparent;
@@ -165,7 +165,7 @@
     line-height: 35px;
   }
 
-  &__images--adaptive {
+  &__image-adaptive {
     display: none;
   }
 }
@@ -497,7 +497,7 @@
     &::before {
       content: '';
       position: absolute;
-      top: 5px;
+      top: 10px;
       right: 25px;
       width: 20px;
       height: 20px;
@@ -516,7 +516,7 @@
     &::after {
       content: '';
       position: absolute;
-      top: 15px;
+      top: 20px;
       right: 0;
       width: 9px;
       height: 1px;

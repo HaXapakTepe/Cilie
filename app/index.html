@@ -22,15 +22,13 @@
   <header class="header" id="header">
     <div class="header__inner">
       <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.png" alt="images logo">
+        <img class="logo__img" src="images/logo.png" alt="логотип">
       </a>
       <nav class="menu">
-        <div class="menu__btn">
-          <div class="menu__burger"></div>
-          <span class="menu__text">
-            Меню
-          </span>
-        </div>
+        <button class="menu__burger" type="button"></button>
+        <span class="menu__text">
+          Меню
+        </span>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#company">О компании</a>
@@ -53,9 +51,9 @@
         </ul>
       </nav>
       <div class="language">
-        <a class="language__link language__link--ru" href="#">RU</a>
+        <a class="language__link language__link--ru" href="#">Ru</a>
         <span class="language__separation">|</span>
-        <a class="language__link" href="#">EN</a>
+        <a class="language__link" href="#">En</a>
       </div>
     </div>
   </header>
@@ -76,8 +74,16 @@
               Записаться
             </a>
           </div>
-          <img class="top__images" src="images/1.jpg" alt="images">
-          <img class="top__images--adaptive" src="images/2.jpg" alt="images">
+
+          <picture class="top__picture">
+            <source srcset="images/1.jpg" media="(min-width: 1440px)">
+            <source srcset="images/2.jpg" media="(max-width: 576px)">
+            <img class="top__image" src="images/1.jpg" alt="изображение">
+            <img class="top__image-adaptive" src="images/2.jpg" alt="изображение">
+          </picture>
+
+          <!-- <img class="top__image" src="images/1.jpg" alt="изображение">
+          <img class="top__image-adaptive" src="images/2.jpg" alt="изображение"> -->
         </div>
       </div>
     </section>
@@ -89,7 +95,7 @@
         </h2>
         <div class="info__inner">
           <div class="info__list">
-              <img class="info__images" src="images/info/1.jpg" alt="images">
+            <img class="info__images" src="images/info/1.jpg" alt="изображение">
             <p class="info__text">
               Используем только гипоаллергенные материалы, безопасные для Вашего здоровья!
             </p>
@@ -98,10 +104,10 @@
             <p class="info__text info__text-even">
               Экономим ваше время и наращиваем на 20 мин меньше, чем в других студиях!
             </p>
-              <img class="info__images" src="images/info/2.jpg" alt="images">
+            <img class="info__images" src="images/info/2.jpg" alt="изображение">
           </div>
           <div class="info__list">
-              <img class="info__images" src="images/info/3.jpg" alt="images">
+            <img class="info__images" src="images/info/3.jpg" alt="изображение">
             <p class="info__text">
               У нас удобная ортопедическая мебель, никакого дискомформа во время процедуры!
             </p>
@@ -110,7 +116,7 @@
             <p class="info__text info__text-even">
               Мастера только с многолетним опытом работы в сфере наращивания ресниц!
             </p>
-              <img class="info__images" src="images/info/4.jpg" alt="images">
+            <img class="info__images" src="images/info/4.jpg" alt="изображение">
           </div>
         </div>
       </div>
@@ -125,7 +131,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/1.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/1.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Юлия
@@ -141,7 +147,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/2.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/2.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Елена
@@ -156,7 +162,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/3.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/3.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Татьяна
@@ -171,7 +177,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/4.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/4.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Дарья
@@ -186,7 +192,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/5.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/5.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Александра
@@ -200,7 +206,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/6.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/6.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Вероника
@@ -215,7 +221,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/7.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/7.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Мария
@@ -229,7 +235,7 @@
 
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/8.jpg" alt="images">
+              <img class="top-slider__images" src="images/top-slider/8.jpg" alt="изображение">
               <div class="top-slider__info">
                 <p class="top-slider__name">
                   Анастасия
@@ -252,157 +258,157 @@
         </h2>
         <div class="price-slider__inner">
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Эффект 2D
-                </p>
-                <span class="price-slider__text">
-                  Наращивание на 1 свою, 2 искуственных ресницы
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=8b0DGI8xpWw&ab_channel=EVALORMAN">
-                  <img class="price-slider__images" src="images/price/1.jpg" alt="video play button">
-                  <div class="price-slider__cost">2000₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Эффект 2D
+              </p>
+              <span class="price-slider__text">
+                Наращивание на 1 свою, 2 искуственных ресницы
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=8b0DGI8xpWw&ab_channel=EVALORMAN">
+                <img class="price-slider__images" src="images/price/1.jpg" alt="изображение">
+                <div class="price-slider__cost">2000₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Голливуд
-                </p>
-                <span class="price-slider__text">
-                  Наращивание на 1 свою, 1 искуственную ресницу
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=-ixicKbWync&ab_channel=%D0%98%D0%9B%D0%AC%D0%94%D0%95%D0%91%D0%9E%D0%A2%D0%AD">
-                  <img class="price-slider__images" src="images/price/2.jpg" alt="video play button">
-                  <div class="price-slider__cost">3000₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Голливуд
+              </p>
+              <span class="price-slider__text">
+                Наращивание на 1 свою, 1 искуственную ресницу
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=-ixicKbWync&ab_channel=%D0%98%D0%9B%D0%AC%D0%94%D0%95%D0%91%D0%9E%D0%A2%D0%AD">
+                <img class="price-slider__images" src="images/price/2.jpg" alt="изображение">
+                <div class="price-slider__cost">3000₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Эффект 3D
-                </p>
-                <span class="price-slider__text">
-                  Наращивание любого эффекта с увеличением объема ресниц к уголкам глаз.
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=Ol3SqVCevGs&ab_channel=faberinfo">
-                  <img class="price-slider__images" src="images/price/3.jpg" alt="video play button">
-                  <div class="price-slider__cost">2500₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Эффект 3D
+              </p>
+              <span class="price-slider__text">
+                Наращивание любого эффекта с увеличением объема ресниц к уголкам глаз.
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=Ol3SqVCevGs&ab_channel=faberinfo">
+                <img class="price-slider__images" src="images/price/3.jpg" alt="изображение">
+                <div class="price-slider__cost">2500₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Классика
-                </p>
-                <span class="price-slider__text">
-                  Наращивание на 1 свою, 2 искуственных ресницы без распушевки пучка.
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=RBmfM9xfWpQ&ab_channel=IrenSkudarnova">
-                  <img class="price-slider__images" src="images/price/4.jpg" alt="video play button">
-                  <div class="price-slider__cost">1500₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Классика
+              </p>
+              <span class="price-slider__text">
+                Наращивание на 1 свою, 2 искуственных ресницы без распушевки пучка.
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=RBmfM9xfWpQ&ab_channel=IrenSkudarnova">
+                <img class="price-slider__images" src="images/price/4.jpg" alt="изображение">
+                <div class="price-slider__cost">1500₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Лисий эффект
-                </p>
-                <span class="price-slider__text">
-                  Наращивание любого эффекта с увеличением объема ресниц к центру глаза
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=X1Rv_uZEtSY&ab_channel=SWASTIJII">
-                  <img class="price-slider__images" src="images/price/5.jpg" alt="video play button">
-                  <div class="price-slider__cost">2000₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Лисий эффект
+              </p>
+              <span class="price-slider__text">
+                Наращивание любого эффекта с увеличением объема ресниц к центру глаза
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=X1Rv_uZEtSY&ab_channel=SWASTIJII">
+                <img class="price-slider__images" src="images/price/5.jpg" alt="изображение">
+                <div class="price-slider__cost">2000₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Мокрый эффект
-                </p>
-                <span class="price-slider__text">
-                  Наращивание любого объема с использованием цветных ресничек
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=uwRo4wRK4n0&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%93%D0%B0%D0%BB%D0%B0%D1%81%D0%B8%D0%BD%D0%B0">
-                  <img class="price-slider__images" src="images/price/6.jpg" alt="video play button">
-                  <div class="price-slider__cost">3000₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Мокрый эффект
+              </p>
+              <span class="price-slider__text">
+                Наращивание любого объема с использованием цветных ресничек
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=uwRo4wRK4n0&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%93%D0%B0%D0%BB%D0%B0%D1%81%D0%B8%D0%BD%D0%B0">
+                <img class="price-slider__images" src="images/price/6.jpg" alt="изображение">
+                <div class="price-slider__cost">3000₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Беличий эффект
-                </p>
-                <span class="price-slider__text">
-                  Наращивание на 1 свою, 3 искуственных ресницы
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=84xRrY7m25o&ab_channel=Lovely_lush">
-                  <img class="price-slider__images" src="images/price/7.jpg" alt="video play button">
-                  <div class="price-slider__cost">3200₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Беличий эффект
+              </p>
+              <span class="price-slider__text">
+                Наращивание на 1 свою, 3 искуственных ресницы
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=84xRrY7m25o&ab_channel=Lovely_lush">
+                <img class="price-slider__images" src="images/price/7.jpg" alt="изображение">
+                <div class="price-slider__cost">3200₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
-            <div class="price-slider__item">
-              <div class="price-slider__content">
-                <p class="price-slider__subtitle">
-                  Цветной эффект
-                </p>
-                <span class="price-slider__text">
-                  Наращивание на 1 свою, 2 искуственных ресницы
-                </span>
-                <a class="price-slider__video" data-fancybox
-                  href="https://www.youtube.com/watch?v=jcrydiVVBMM&ab_channel=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%D0%B5%D0%91%D1%80%D0%BE%D0%B2%D0%B8">
-                  <img class="price-slider__images" src="images/price/8.jpg" alt="video play button">
-                  <div class="price-slider__cost">2800₽</div>
-                </a>
-                <a class="link popup__open" href="#">
-                  Записаться
-                </a>
-              </div>
+          <div class="price-slider__item">
+            <div class="price-slider__content">
+              <p class="price-slider__subtitle">
+                Цветной эффект
+              </p>
+              <span class="price-slider__text">
+                Наращивание на 1 свою, 2 искуственных ресницы
+              </span>
+              <a class="price-slider__video" data-fancybox
+                href="https://www.youtube.com/watch?v=jcrydiVVBMM&ab_channel=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%D0%B5%D0%91%D1%80%D0%BE%D0%B2%D0%B8">
+                <img class="price-slider__images" src="images/price/8.jpg" alt="изображение">
+                <div class="price-slider__cost">2800₽</div>
+              </a>
+              <a class="link popup__open" href="#">
+                Записаться
+              </a>
             </div>
+          </div>
 
         </div>
       </div>
@@ -416,8 +422,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/1.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/1a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/1.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/1a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Романова Джулия
                 </p>
@@ -434,8 +440,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/2.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/2a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/2.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/2a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Карамзина Лилия
                 </p>
@@ -452,8 +458,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/3.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/3a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/3.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/3a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Хорошева Инна
                 </p>
@@ -470,8 +476,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/4.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/4a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/4.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/4a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Чупина Олеся
                 </p>
@@ -488,8 +494,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/5.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/5a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/5.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/5a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Котова Дарья
                 </p>
@@ -506,8 +512,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/6.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/6a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/6.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/6a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Рыжова Елизавета
                 </p>
@@ -524,8 +530,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/7.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/7a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/7.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/7a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Зотова Анна
                 </p>
@@ -542,8 +548,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/8.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/8a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/8.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/8a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Иванова Юлия
                 </p>
@@ -560,8 +566,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/9.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/9a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/9.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/9a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Абрамова Ольга
                 </p>
@@ -578,8 +584,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/10.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/10a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/10.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/10a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Иванова Елена
                 </p>
@@ -596,8 +602,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/11.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/11a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/11.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/11a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Крылова Дарья
                 </p>
@@ -614,8 +620,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/12.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/12a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/12.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/12a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Сушина Анастасия
                 </p>
@@ -632,8 +638,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/13.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/13a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/13.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/13a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Симонова Елена
                 </p>
@@ -650,8 +656,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/14.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/14a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/14.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/14a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Кускова Мила
                 </p>
@@ -668,8 +674,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/15.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/15a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/15.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/15a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Юшина Анна
                 </p>
@@ -686,8 +692,8 @@
           <div class="reviews-slider__items">
             <div class="reviews-slider__item">
               <div class="reviews-slider__content">
-                <img class="reviews-slider__images" src="images/reviews/16.png" alt="images autor">
-                <img class="reviews-slider__images-adaptive" src="images/reviews/16a.png" alt="images autor">
+                <img class="reviews-slider__images" src="images/reviews/16.png" alt="Фото мастера">
+                <img class="reviews-slider__images-adaptive" src="images/reviews/16a.png" alt="Фото мастера">
                 <p class="reviews-slider__name">
                   Левина Ольга
                 </p>
@@ -761,7 +767,7 @@
     </section>
 
     <section class="contact" id="contacts">
-      <div class="contact__container container">
+      <div class="container contact__container">
         <h2 class="contact__title title">
           Контакты
         </h2>
@@ -771,7 +777,7 @@
 
             <div class="contact__info-box">
               <div class="contact__info-icon">
-                <img class="contact__info-images" src="images/icon/marker.svg" alt="images-icon">
+                <img class="contact__info-images" src="images/icon/marker.svg" alt="иконка места">
               </div>
               <p class="contact__info-text">
                 393978</br>
@@ -781,7 +787,7 @@
 
             <div class="contact__info-box">
               <div class="contact__info-icon">
-                <img class="contact__info-images" src="images/icon/phone.svg" alt="images-icon">
+                <img class="contact__info-images" src="images/icon/phone.svg" alt="иконка телефона">
               </div>
               <div class="contact__info-phone">
                 <a class="contact__phone" href="tel:+84953237948">
@@ -795,7 +801,7 @@
 
             <div class="contact__info-box">
               <div class="contact__info-icon">
-                <img class="contact__info-images" src="images/icon/time.svg" alt="images-icon">
+                <img class="contact__info-images" src="images/icon/time.svg" alt="иконка часов">
               </div>
               <p class="contact__info-text">
                 Часы работы:</br>
@@ -816,10 +822,10 @@
       <div class="footer__inner">
         <div class="footer__item">
           <a class="footer__link" href="#">
-            <img class="footer__link-icon" src="images/icon/instagram.svg" alt="icon instagram">
+            <img class="footer__link-icon" src="images/icon/instagram.svg" alt="ищображение instagram">
           </a>
           <a class="footer__link" href="#">
-            <img class="footer__link-icon" src="images/icon/telegram.svg" alt="icon telegram">
+            <img class="footer__link-icon" src="images/icon/telegram.svg" alt="изображение telegram">
           </a>
         </div>
         <p class="footer__copy">
@@ -833,7 +839,7 @@
     <div class="popup__body">
       <a class="popup__area" href="#header"></a>
       <form class="popup__content">
-        <img class="popup__close" src="images/icon/close.svg" alt="icon close">
+        <img class="popup__close" src="images/icon/close.svg" alt="закрыть">
         <p class="popup__title title">Подписаться</p>
         <p class="popup__text">
           ФИО
@@ -939,7 +945,7 @@
   <div class="confirmation">
     <div class="confirmation__body">
       <div class="confirmation__content">
-        <img class="confirmation__close" src="images/icon/close.svg" alt="icon close">
+        <img class="confirmation__close" src="images/icon/close.svg" alt="закрыть">
         <p class="confirmation__title title">
           Вы записаны!
         </p>
