@@ -2,9 +2,8 @@
   font-family: "Roboto";
   font-weight: 100;
   font-style: italic;
-  src: local("Roboto-ThinItalic"),
-       url("../fonts/Roboto-ThinItalic.woff2") format("woff2"),
-       url("../fonts/Roboto-ThinItalic.woff") format("woff");
+  src:  url("../fonts/Roboto-ThinItalic.woff2") format("woff2"),
+        url("../fonts/Roboto-ThinItalic.woff") format("woff");
   font-display: swap;
 }
 
@@ -12,8 +11,7 @@
   font-family: "Roboto";
   font-weight: 300;
   font-style: italic;
-  src: local("Roboto-LightItalic"),
-       url("../fonts/Roboto-LightItalic.woff2") format("woff2"),
+  src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"),
        url("../fonts/Roboto-LightItalic.woff") format("woff");
   font-display: swap;
 }
@@ -22,8 +20,7 @@
   font-family: "Roboto";
   font-weight: 300;
   font-style: normal;
-  src: local("Roboto-Light"),
-       url("../fonts/Roboto-Light.woff2") format("woff2"),
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"),
        url("../fonts/Roboto-Light.woff") format("woff");
   font-display: swap;
 }
@@ -32,8 +29,7 @@
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
-  src: local("Roboto-Regular"),
-       url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
        url("../fonts/Roboto-Regular.woff") format("woff");
   font-display: swap;
 }
@@ -42,8 +38,7 @@
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
-  src: local("Roboto-Bold"),
-       url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
        url("../fonts/Roboto-Bold.woff") format("woff");
   font-display: swap;
 }
@@ -52,9 +47,8 @@
   font-family: "Sanchez-Italic";
   font-weight: 400;
   font-style: italic;
-  src: local("Sanchez-Italic"),
-    url("../fonts/Sanchez-Italic.woff2") format("woff2"),
-    url("../fonts/Sanchez-Italic.woff") format("woff");
+  src: url("../fonts/Sanchez-Italic.woff2") format("woff2"),
+       url("../fonts/Sanchez-Italic.woff") format("woff");
   font-display: swap;
 }
 
@@ -62,8 +56,7 @@
   font-family: "Thonburi";
   font-weight: 700;
   font-style: normal;
-  src: local("Thonburi"),
-       url("../fonts/Thonburi.woff2") format("woff2"),
+  src: url("../fonts/Thonburi.woff2") format("woff2"),
        url("../fonts/Thonburi.woff") format("woff");
   font-display: swap;
 }
@@ -72,8 +65,7 @@
   font-family: "IBMPlexSans-Regular";
   font-weight: 400;
   font-style: normal;
-  src: local("IBMPlexSans-Regular"),
-       url("../fonts/IBMPlexSans-Regular.woff2") format("woff2"),
+  src: url("../fonts/IBMPlexSans-Regular.woff2") format("woff2"),
        url("../fonts/IBMPlexSans-Regular.woff") format("woff");
   font-display: swap;
 }
