@@ -130,7 +130,7 @@ $(function () {
     $(this).toggleClass('active').next().slideToggle(300);
   });
 
-  $('.popup__open').click(function (e) {
+  $('.link--open').click(function (e) {
     e.preventDefault();
     $('.popup').fadeIn(500);
     $('html').addClass('no-scroll-popup');

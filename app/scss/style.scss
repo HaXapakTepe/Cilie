@@ -184,7 +184,6 @@
   &__inner {
     display: flex;
     justify-content: space-around;
-    
   }
 
   &__list {
@@ -209,7 +208,7 @@
     }
   }
 
-  &__text-even {
+  &__text--even {
     padding-top: 0;
     margin-bottom: 40px;
 
@@ -252,8 +251,9 @@
     border-top: 15px solid $accent;
     border-left: 10px solid $accent;
   }
-
+  
   &__name {
+    display: block;
     margin-bottom: 25px;
     @extend %roboto-700;
     font-size: 26px;
@@ -305,6 +305,7 @@
   }
 
   &__subtitle {
+    display: block;
     margin-bottom: 10px;
     text-align: center;
 
@@ -316,7 +317,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       position: absolute;
-      right: 5px;
+      right: 20px;
       top: 3px;
     }
   }
@@ -327,7 +328,7 @@
     justify-content: center;
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 20px;
     width: 20px;
     height: 20px;
     z-index: 1;
@@ -343,7 +344,7 @@
 
     &:hover {
       top: 0px;
-      right: -55px;
+      right: -45px;
       width: 110px;
       height: 100px;
       opacity: 1;
@@ -365,7 +366,7 @@
       transform: translate(50%, -50%);
       width: 55px;
       height: 70px;
-      background-image: url("../images/icon/play-btn.png");
+      background-image: url("../images/icon/play-btn.svg");
       z-index: 1;
     }
 
@@ -378,7 +379,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 69px;
+    bottom: 70px;
     right: -30px;
     width: 70px;
     height: 70px;
@@ -433,16 +434,12 @@
     text-align: center;
   }
 
-  &__images {
-    margin: 0 auto 5px;
-  }
-
-  .reviews-slider__images-adaptive {
-    display: none;
+  &__image {
     margin: 0 auto 5px;
   }
 
   &__name {
+    display: block;
     margin-bottom: 5px;
     @extend %roboto-700;
     text-align: center;
@@ -573,25 +570,25 @@
     padding-top: 55px;
   }
 
-  &__info-box {
+  &__box {
     display: flex;
     margin-bottom: 35px;
   }
 
-  &__info-icon {
+  &__icon {
     width: 50px;
     margin-right: 5px;
   }
 
-  &__info-images {
+  &__images {
     padding-top: 5px;
   }
 
-  &__info-text {
+  &__text {
     width: 430px;
   }
 
-  &__phone {
+  &__number {
     display: block;
     color: $text;
   }
@@ -703,6 +700,7 @@
   }
 
   &__text {
+    display: block;
     padding-top: 10px;
     margin-bottom: 5px;
     font-size: 14px;
@@ -854,12 +852,14 @@
   }
 
   &__title {
+    display: block;
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 28px;
   }
 
   &__text {
+    display: block;
     margin-bottom: 40px;
     @extend %roboto-it-300;
     text-align: center;
