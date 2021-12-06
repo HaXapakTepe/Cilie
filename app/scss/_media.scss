@@ -1,4 +1,4 @@
-@media (max-width: 1250px) {
+@media (max-width: 1366px) {
   .logo {
     margin-left: 10px;
   }
@@ -137,7 +137,6 @@
 
     &__text {
       font-size: 20px;
-      line-height: 23px;
     }
   }
 
@@ -177,7 +176,6 @@
 
   .title {
     font-size: 30px;
-    line-height: 35px;
   }
 
   .info,
@@ -194,7 +192,6 @@
 
     &__title {
       font-size: 45px;
-      line-height: 45px;
     }
 
     &__content {
@@ -203,7 +200,6 @@
 
     &__text {
       font-size: 27px;
-      line-height: 30px;
     }
   }
 
@@ -222,12 +218,10 @@
 
     &__name {
       font-size: 25px;
-      line-height: 29px;
     }
 
     &__text {
       font-size: 20px;
-      line-height: 23px;
     }
   }
 
@@ -256,7 +250,6 @@
       padding-top: 1px;
       text-align: left;
       font-size: 16px;
-      line-height: 1.2em;
 
       &::after {
         left: 0;
@@ -272,7 +265,6 @@
       text-align: left;
       background-color: transparent;
       font-size: 12px;
-      line-height: 1.2em;
 
       &:not(:hover) {
         pointer-events: none;
@@ -291,7 +283,6 @@
       bottom: -19px;
       right: -165px;
       font-size: 20px;
-      line-height: 1.2em;
     }
   }
 
@@ -312,12 +303,10 @@
     &__text {
       max-width: 240px;
       font-size: 20px;
-      line-height: 23px;
     }
 
     &__phone {
       font-size: 20px;
-      line-height: 23px;
     }
 
     #map {
@@ -331,7 +320,6 @@
   .footer {
     &__copy {
       font-size: 17px;
-      line-height: 22px;
     }
   }
 }
@@ -357,12 +345,11 @@
 
     &__title {
       font-size: 20px;
-      line-height: 20px;
     }
 
     &__content {
       width: 250px;
-      padding: 175px 0 215px;
+      padding: 181px 0 215px;
       margin-left: -180px;
       text-align: left;
       order: 0;
@@ -373,7 +360,6 @@
       margin: 0 0 30px;
       text-align: left;
       font-size: 14px;
-      line-height: 16px;
     }
 
     &__image {
@@ -391,7 +377,6 @@
 
   .info {
     font-size: 20px;
-    line-height: 20px;
 
     &__text {
       &::after,
@@ -409,19 +394,16 @@
 
     &__name {
       font-size: 17px;
-      line-height: 20px;
     }
 
     &__text {
       font-size: 16px;
-      line-height: 19px;
     }
   }
 
   .faq {
     &__title {
       font-size: 18px;
-      line-height: 21px;
     }
 
     &__item {
@@ -441,7 +423,6 @@
 
     &__text {
       font-size: 14px;
-      line-height: 12px;
     }
   }
 
@@ -512,7 +493,6 @@
       padding-top: 1px;
       text-align: left;
       font-size: 16px;
-      line-height: 1.2em;
 
       &::after {
         left: 0;
@@ -529,7 +509,6 @@
       text-align: left;
       background-color: transparent;
       font-size: 12px;
-      line-height: 1.2em;
 
       &:not(:hover) {
         pointer-events: none;
@@ -541,7 +520,6 @@
       width: 53px;
       height: 51px;
       font-size: 14px;
-      line-height: 16px;
     }
   }
 }
@@ -550,11 +528,11 @@
 
   .title {
     margin-bottom: 25px;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 18px
   }
 
   .header {
+    padding: 12px 0;
     &__inner {
       display: block;
     }
@@ -587,7 +565,6 @@
       top: 20px;
       left: 20px;
       font-size: 20px;
-      line-height: 23px;
       color: $btn;
     }
 
@@ -651,7 +628,6 @@
 
     &__test {
       font-size: 14px;
-      line-height: 26px;
     }
 
     &__image {
@@ -674,7 +650,6 @@
   .info {
     &__text {
       font-size: 14px;
-      line-height: 17px;
 
       &::after,
       &::before {
@@ -708,12 +683,10 @@
 
     &__text {
       font-size: 14px;
-      line-height: 17px;
     }
 
     &__name {
       font-size: 15px;
-      line-height: 18px;
     }
   }
 
@@ -735,12 +708,10 @@
     &__text {
       width: 200px;
       font-size: 16px;
-      line-height: 19px;
     }
 
     &__phone {
       font-size: 16px;
-      line-height: 19px;
     }
 
     #map {
@@ -757,7 +728,6 @@
 
     &__copy {
       font-size: 12px;
-      line-height: 16px;
     }
   }
 

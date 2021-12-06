@@ -897,10 +897,12 @@
         <p class="popup__text">
           Выберите наращивание
         </p>
-        <select class="popup__input" tabindex="3" name="effects" placeholder="Выберите наращивание">
-          <option class="popup__option popup__option--first" default disabled selected>
+        <select class="popup__input" tabindex="3" name="" placeholder="Выберите наращивание"
+        onfocus='this.size=5;' onblur='this.size=1;'
+        onchange='this.size=1; this.blur();'>
+          <!-- <option class="popup__option popup__option--first" default disabled selected>
             Выберите наращивание
-          </option>
+          </option> -->
           <option class="popup__option" value="Эффект 2D">
             Эффект 2D
           </option>
@@ -929,10 +931,12 @@
         <span class="popup__text">
           Выберите мастера
         </span>
-        <select class="popup__input" tabindex="4" name="masters" placeholder="Выберите мастера" required>
-          <option class="popup__option popup__option--first" default disabled selected>
+        <select class="popup__input" tabindex="4" name="masters" placeholder="Выберите мастера" required
+        onfocus='this.size=5;' onblur='this.size=1;'
+        onchange='this.size=1; this.blur();'>
+          <!-- <option class="popup__option popup__option--first" default disabled selected>
             Выберите мастера
-          </option>
+          </option> -->
           <option class="popup__option" value="Романова Джулия">
             Романова Джулия
           </option>
