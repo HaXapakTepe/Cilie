@@ -8,9 +8,10 @@ body {
   flex-direction: column;
   max-width: 1920px;
   margin: 0 auto;
-  @extend %roboto-400;
+  font-family: $roboto;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.2;
   background-color: $default;
   color: $text;
 }
@@ -34,17 +35,17 @@ body {
   padding: 9px 5px;
   border: 1px solid transparent;
   border-radius: 6px;
-  @extend %roboto-700;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 30px;
+  line-height: 1.2;
   background-color: $accent;
   color: $btn;
-  transition: all 0.3s linear;
+  transition: border-color 0.3s linear;
   outline: transparent;
 
   &:hover,
   &:focus {
-    border: 1px solid $accent-hover;
+    border-color: $accent-hover;
   }
 
   &:active {
@@ -54,9 +55,9 @@ body {
 
 .title {
   text-align: center;
-  @extend %roboto-700;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
 }
 
 .slick-dots {

@@ -12,50 +12,6 @@ $dots: #ECE4DC;
 $text: #000000;
 $btn: #FFFFFF;
 
-%roboto-it-100 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-%roboto-it-300 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-%roboto-300 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-
-%roboto-400 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-
-%roboto-700 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-
-%sanchez-it-400 {
-  font-family: "Sanchez-Italic", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-%sanchez-400 {
-  font-family: "Sanchez-Regular", sans-serif;
-  font-weight: 400;
-}
-
-%thonbury-700 {
-  font-family: "Thonburi", sans-serif;
-  font-weight: 700;
-}
-
-%ibmplexsans-400 {
-  font-family: "IBMPlexSans-Regular", sans-serif;
-  font-weight: 400;
-}
+$roboto: "Roboto", sans-serif;
+$sanchez: "Sanchez", sans-serif;
+$ibmplexsans: "IBMPlexSans",sans-serif;
