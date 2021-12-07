@@ -1,0 +1,177 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.9);
+  z-index: 6;
+
+  &__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 30px 10px;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 355px;
+    padding: 35px 25px;
+    color: $text;
+    background-color: $popup;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    background-image: url('../images/icon/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-image: url('../images/icon/close-bold.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transition: all 0.3s linear;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  select {
+    appearance: none;
+    background-image: url('../images/icon/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: relative;
+    width: 300px;
+    padding: 5px 25px 5px 15px;
+    border: 1px solid $border;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $dots;
+    transition: all 0.3s;
+    outline: transparent;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &:hover {
+      border: 1px solid $text;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    &:focus {
+      border: 1px solid $text;
+
+      &::placeholder {
+        font-size: 0;
+      }
+    }
+  }
+
+  &__option {
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $form-hover;
+      transition: all 0.3s;
+    }
+  }
+
+  &__option--first {
+    color: $border;
+    background-color: $default;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    margin: 25px auto 0;
+    border-radius: 6px;
+    border: 1px solid $accent-hover;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $btn;
+    background-color: $border;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $accent;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      border: 1px solid $accent-hover;
+    }
+
+    &:active {
+      background-color: $accent-btn;
+    }
+
+    &:disabled {
+      color: #AFA094;
+      background-color: $default;
+      border: 1px solid $accent;
+    }
+  }
+}
+
+.no-scroll-popup {
+  overflow-y: hidden;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cilie</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#3e3832">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+
+  {% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+
+  {% include 'app/module/_top/_top.html' %}
+  {% include 'app/module/_top-slider/_top-slider.html' %}
+  {% include 'app/module/_info/_info.html' %}
+  {% include 'app/module/_price-slider/_price-slider.html' %}
+  {% include 'app/module/_reviews-slider/_reviews-slider.html' %}
+  {% include 'app/module/_faq/_faq.html' %}
+  {% include 'app/module/_contact/_contact.html' %}
+
+  </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+    {% include 'app/module/_popup/_popup.html' %}
+
+    {% include 'app/module/_confirmation/_confirmation.html' %}
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" async>
+  </script>
+  <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+          lat: 55.75543085301865,
+          lng: 37.61656589501851
+        },
+        zoom: 11,
+      });
+    }
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

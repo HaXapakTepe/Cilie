@@ -1,0 +1,43 @@
+.top-slider {
+  padding-bottom: 91px;
+
+  &__container {
+    max-width: 1475px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    margin: 0 20px 45px 0;
+    padding-left: 25px;
+  }
+
+  &__images {
+    margin-right: 53px;
+    border-top: 15px solid $accent;
+    border-left: 10px solid $accent;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+  }
+
+  .slick-dots {
+    margin-top: -20px;
+  }
+}
