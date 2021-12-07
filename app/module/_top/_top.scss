@@ -1,0 +1,37 @@
+.top {
+  padding-top: 72px;
+  background-image: url("../images/bg-top.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 97px 0 86px;
+  }
+
+  &__content {
+    max-width: 605px;
+    padding: 73px 0 0 14px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1;
+    letter-spacing: 1.4px;
+  }
+
+  &__text {
+    margin-bottom: 90px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  &__image-adaptive {
+    display: none;
+  }
+}

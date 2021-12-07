@@ -1,0 +1,74 @@
+.confirmation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.9);
+  z-index: 6;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 35px 25px;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 355px;
+    padding: 100px 30px 70px;
+    background-image: url("../images/icon/confirmation-bg.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $default;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    padding: 5px;
+    background-image: url('../images/icon/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      padding: 5px;
+      background-image: url('../images/icon/close-bold.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transition: all 0.3s linear;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.no-scroll-confirmation {
+  overflow-y: hidden;
+}

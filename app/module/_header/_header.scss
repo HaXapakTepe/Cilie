@@ -1,0 +1,127 @@
+.header {
+  position: fixed;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  z-index: 5;
+  padding: 12px 10px 8px;
+  background-color: $bg-header;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1430px;
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  margin: 3px 0 0 33px;
+  outline: transparent;
+}
+
+.menu {
+  &__burger {
+    display: none;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__list {
+    width: 1020px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:nth-child(2) {
+      margin-left: 27px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 10px;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    padding: 0 0 4px;
+    border-bottom: 3px solid transparent;
+    font-weight: 700;
+    color: $text;
+    transition: all 0.3s linear;
+    outline: transparent;
+
+    &:hover {
+      border-color: $accent;
+    }
+
+    &:focus {
+      border-color: $accent;
+    }
+
+    &:active {
+      border-color: $accent;
+      color: $accent;
+    }
+  }
+}
+
+.language {
+  width: 80px;
+  margin-right: 9px;
+  text-transform: uppercase;
+
+  &__link {
+    font-weight: 700;
+    color: $language;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    outline: transparent;
+
+    &:hover {
+      color: $text;
+      border-color: $accent;
+      transition: all 0.3s;
+    }
+
+    &:focus {
+      color: $text;
+      transition: all 0.3s;
+    }
+
+    &:active {
+      color: $text;
+      transition: all 0.3s;
+    }
+  }
+
+  &__link--ru,
+  &__link--active {
+    color: $text;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $text;
+      border-bottom: 3px solid $accent;
+      transition: all 0.3s;
+    }
+
+    &:focus {
+      color: $text;
+      transition: all 0.3s;
+    }
+
+    &:active {
+      color: $text;
+      transition: all 0.3s;
+    }
+  }
+}
