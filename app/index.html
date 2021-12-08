@@ -1,862 +1,974 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cilie</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#000000">
-  <meta name="msapplication-TileColor" content="#3e3832">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/index.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilie</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#3e3832">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+  </head>
 
-<body>
+  <body>
 
-  <header class="header" id="header">
-  <div class="header__inner">
-    <a class="logo" href="#">
-      <img class="logo__img" src="images/logo.png" alt="логотип">
-    </a>
-    <nav class="menu">
-      <button class="menu__burger" type="button"></button>
-      <span class="menu__text">
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="логотип">
+        </a>
+        <nav class="menu">
+          <button class="menu__burger" type="button"></button>
+          <span class="menu__text">
         Меню
       </span>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#company">О компании</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#masters">Мастера</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#price">Цены</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#reviews">Отзывы</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#faq">FAQ</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#contacts">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="language">
-      <a class="language__link language__link--ru" href="#">Ru</a>
-      <span class="language__separation">|</span>
-      <a class="language__link" href="#">En</a>
-    </div>
-  </div>
-</header>
-
-  <main class="main">
-
-  <section class="top">
-      <div class="container top__container">
-        <div class="top__inner">
-          <div class="top__content">
-            <h1 class="top__title">
-              Профессиональное наращивание ресниц
-            </h1>
-            <p class="top__text">
-              С этого момента, Ваш взгляд, никого не оставит равнодушным!
-            </p>
-            <a class="link link--open" href="#">
-              Записаться
-            </a>
-          </div>
-          <picture class="top__picture">
-            <source srcset="images/1.jpg" media="(min-width: 1440px)">
-            <source srcset="images/2.jpg" media="(max-width: 576px)">
-            <img class="top__image" src="images/1.jpg" alt="изображение">
-          </picture>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#company">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#masters">Мастера</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#price">Цены</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#faq">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="language">
+          <a class="language__link language__link--ru" href="#">Ru</a>
+          <span class="language__separation">|</span>
+          <a class="language__link" href="#">En</a>
         </div>
       </div>
-    </section>
-  <section class="top-slider" id="masters">
-      <div class="container top-slider__container">
-        <h2 class="top-slider__title title">
+    </header>
+
+    <main class="main">
+
+      <section class="top">
+        <div class="container top__container">
+          <div class="top__inner">
+            <div class="top__content">
+              <h1 class="top__title">
+              Профессиональное наращивание ресниц
+            </h1>
+              <p class="top__text">
+              С этого момента, Ваш взгляд, никого не оставит равнодушным!
+            </p>
+              <a class="link link--open" href="#">
+              Записаться
+            </a>
+            </div>
+            <picture class="top__picture">
+              <source srcset="images/1.jpg" media="(min-width: 1440px)">
+              <source srcset="images/2.jpg" media="(max-width: 576px)">
+              <img class="top__image" src="images/1.jpg" alt="изображение">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-slider" id="masters">
+        <div class="container top-slider__container">
+          <h2 class="top-slider__title title">
           Наши мастера
         </h2>
-        <ul class="top-slider__inner">
+          <ul class="top-slider__inner">
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/1.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/1.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Юлия
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Молодой и талантливый мастер. К работе относится с невероятной ответственностью. Имеет сертификат школы Awwards.
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/2.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/2.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Елена
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Новый мастер в нашей команде. Окончила курсы в школе Litera. Сделать супер выразительный взгляд - ее конек!
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/3.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/3.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Татьяна
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Тот самый мастер, который стремится к идеальному выполнению своих работ. Призер конкурса “Top lashes 2020”
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/4.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/4.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Дарья
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Опыт работы в сфере beauty около 7 лет. Имеет множество сертификатов, подтвержающих ее профессионализм.
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/5.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/5.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Александра
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Победительница конкурса “Top lashes 2021”. Главный девиз мастера “ресничка к ресничке”
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/6.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/6.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Вероника
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Мастер, который любит совершенствоваться! Постоянно посещает мастер классы, проходит обучения, преумножая свою практику.
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/7.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/7.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Мария
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Мастер на все руки! Имеет 2 зарубежных сертификата специалиста по наращиванию.
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="top-slider__item">
-            <div class="top-slider__content">
-              <img class="top-slider__images" src="images/top-slider/8.jpg" alt="изображение">
-              <div class="top-slider__info">
-                <span class="top-slider__name">
+            <li class="top-slider__item">
+              <div class="top-slider__content">
+                <img class="top-slider__images" src="images/top-slider/8.jpg" alt="изображение">
+                <div class="top-slider__info">
+                  <span class="top-slider__name">
                   Анастасия
                 </span>
-                <p class="top-slider__text">
+                  <p class="top-slider__text">
                   Опыт работы около 3-х лет. Преобразит Ваш взгляд, чтобы вы сражали всех наповал!
                 </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-        </ul>
-      </div>
-    </section>
-  <section class="info" id="company">
-      <div class="container info__container">
-        <h2 class="info__title title">
+          </ul>
+        </div>
+      </section>
+
+      <section class="info" id="company">
+        <div class="container info__container">
+          <h2 class="info__title title">
           О компании
         </h2>
-        <ul class="info__inner">
+          <ul class="info__inner">
 
-          <li class="info__list">
-            <img class="info__image" src="images/info/1.jpg" alt="изображение">
-            <p class="info__text">
+            <li class="info__list">
+              <img class="info__image" src="images/info/1.jpg" alt="изображение">
+              <p class="info__text">
               Используем только гипоаллергенные материалы, безопасные для Вашего здоровья!
             </p>
-          </li>
+            </li>
 
-          <li class="info__list">
-            <p class="info__text info__text--even">
+            <li class="info__list">
+              <p class="info__text info__text--even">
               Экономим ваше время и наращиваем на 20 мин меньше, чем в других студиях!
             </p>
-            <img class="info__image" src="images/info/2.jpg" alt="изображение">
-          </li>
+              <img class="info__image" src="images/info/2.jpg" alt="изображение">
+            </li>
 
-          <li class="info__list">
-            <img class="info__image" src="images/info/3.jpg" alt="изображение">
-            <p class="info__text">
+            <li class="info__list">
+              <img class="info__image" src="images/info/3.jpg" alt="изображение">
+              <p class="info__text">
               У нас удобная ортопедическая мебель, никакого дискомформа во время процедуры!
             </p>
-          </li>
+            </li>
 
-          <li class="info__list">
-            <p class="info__text info__text--even">
+            <li class="info__list">
+              <p class="info__text info__text--even">
               Мастера только с многолетним опытом работы в сфере наращивания ресниц!
             </p>
-            <img class="info__image" src="images/info/4.jpg" alt="изображение">
-          </li>
-        </ul>
+              <img class="info__image" src="images/info/4.jpg" alt="изображение">
+            </li>
+          </ul>
 
-      </div>
-    </section>
-  <section class="price-slider" id="price">
-      <div class="container price-slider__container">
-        <h2 class="price-slider__title title">
+        </div>
+      </section>
+
+      <section class="price-slider" id="price">
+        <div class="container price-slider__container">
+          <h2 class="price-slider__title title">
           Цены
         </h2>
-        <ul class="price-slider__inner">
+          <ul class="price-slider__inner">
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Эффект 2D
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание на 1 свою, 2 искуственных ресницы
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=8b0DGI8xpWw&ab_channel=EVALORMAN">
-                <img class="price-slider__images" src="images/price/1.jpg" alt="изображение">
-                <span class="price-slider__cost">2000₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/1.jpg" alt="изображение">
+                  <span class="price-slider__cost">2000₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <div class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Голливуд
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание на 1 свою, 1 искуственную ресницу
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=-ixicKbWync&ab_channel=%D0%98%D0%9B%D0%AC%D0%94%D0%95%D0%91%D0%9E%D0%A2%D0%AD">
-                <img class="price-slider__images" src="images/price/2.jpg" alt="изображение">
-                <span class="price-slider__cost">3000₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/2.jpg" alt="изображение">
+                  <span class="price-slider__cost">3000₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
+              </div>
             </div>
-          </div>
 
-          <div class="price-slider__item">
-            <li class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <div class="price-slider__item">
+              <li class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Эффект 3D
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание любого эффекта с увеличением объема ресниц к уголкам глаз.
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=Ol3SqVCevGs&ab_channel=faberinfo">
-                <img class="price-slider__images" src="images/price/3.jpg" alt="изображение">
-                <span class="price-slider__cost">2500₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/3.jpg" alt="изображение">
+                  <span class="price-slider__cost">2500₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
-            </li>
-          </div>
+              </li>
+            </div>
 
-          <li class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <li class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Классика
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание на 1 свою, 2 искуственных ресницы без распушевки пучка.
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=RBmfM9xfWpQ&ab_channel=IrenSkudarnova">
-                <img class="price-slider__images" src="images/price/4.jpg" alt="изображение">
-                <span class="price-slider__cost">1500₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/4.jpg" alt="изображение">
+                  <span class="price-slider__cost">1500₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
-            </div>
-          </li>
+              </div>
+            </li>
 
-          <li class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <li class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Лисий эффект
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание любого эффекта с увеличением объема ресниц к центру глаза
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=X1Rv_uZEtSY&ab_channel=SWASTIJII">
-                <img class="price-slider__images" src="images/price/5.jpg" alt="изображение">
-                <span class="price-slider__cost">2000₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/5.jpg" alt="изображение">
+                  <span class="price-slider__cost">2000₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
-            </div>
-          </li>
+              </div>
+            </li>
 
-          <li class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <li class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Мокрый эффект
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание любого объема с использованием цветных ресничек
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=uwRo4wRK4n0&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%93%D0%B0%D0%BB%D0%B0%D1%81%D0%B8%D0%BD%D0%B0">
-                <img class="price-slider__images" src="images/price/6.jpg" alt="изображение">
-                <span class="price-slider__cost">3000₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/6.jpg" alt="изображение">
+                  <span class="price-slider__cost">3000₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
-            </div>
-          </li>
+              </div>
+            </li>
 
-          <li class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <li class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Беличий эффект
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание на 1 свою, 3 искуственных ресницы
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=84xRrY7m25o&ab_channel=Lovely_lush">
-                <img class="price-slider__images" src="images/price/7.jpg" alt="изображение">
-                <span class="price-slider__cost">3200₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/7.jpg" alt="изображение">
+                  <span class="price-slider__cost">3200₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
-            </div>
-          </li>
+              </div>
+            </li>
 
-          <li class="price-slider__item">
-            <div class="price-slider__content">
-              <span class="price-slider__subtitle">
+            <li class="price-slider__item">
+              <div class="price-slider__content">
+                <span class="price-slider__subtitle">
                 Цветной эффект
               </span>
-              <p class="price-slider__text">
+                <p class="price-slider__text">
                 Наращивание на 1 свою, 2 искусcтвенных ресницы
               </p>
-              <a class="price-slider__video" data-fancybox
+                <a class="price-slider__video" data-fancybox
                 href="https://www.youtube.com/watch?v=jcrydiVVBMM&ab_channel=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%D0%B5%D0%91%D1%80%D0%BE%D0%B2%D0%B8">
-                <img class="price-slider__images" src="images/price/8.jpg" alt="изображение">
-                <span class="price-slider__cost">2800₽</span>
-              </a>
-              <a class="price-slider__link link link--open" href="#">
+                  <img class="price-slider__images" src="images/price/8.jpg" alt="изображение">
+                  <span class="price-slider__cost">2800₽</span>
+                </a>
+                <a class="price-slider__link link link--open" href="#">
                 Записаться
               </a>
-            </div>
-          </li>
+              </div>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
+      </section>
+
+      <div class="popup">
+        <div class="popup__body">
+          <a class="popup__area" href="#header"></a>
+          <form class="popup__content">
+            <img class="popup__close" src="images/icon/close.svg" alt="закрыть">
+            <p class="popup__title title">Подписаться</p>
+            <p class="popup__text">
+          ФИО
+        </p>
+            <input class="popup__input" type="text" tabindex="1" name="username" placeholder="ФИО" required>
+            <p class="popup__text">
+          Телефон
+        </p>
+            <input class="popup__input" type="tel" tabindex="2" name="userphone" placeholder="+7" required>
+            <p class="popup__text">
+          Выберите наращивание
+        </p>
+            <select class="popup__input" tabindex="3" name="" placeholder="Выберите наращивание"
+        onfocus='this.size=5;' onblur='this.size=1;'
+        onchange='this.size=1; this.blur();'>
+              <option class="popup__option" value="Эффект 2D">
+            Эффект 2D
+          </option>
+              <option class="popup__option" value="Голливуд">
+            Голливуд
+          </option>
+              <option class="popup__option" value="Эффект 3D">
+            Эффект 3D
+          </option>
+              <option class="popup__option" value="Классика">
+            Классика
+          </option>
+              <option class="popup__option" value="Лисий эффект">
+            Лисий эффект
+          </option>
+              <option class="popup__option" value="Мокрый эффект">
+            Мокрый эффект
+          </option>
+              <option class="popup__option" value="Беличий эффект">
+            Беличий эффект
+          </option>
+              <option class="popup__option" value="Цветной эффект">
+            Цветной эффект
+          </option>
+            </select>
+            <span class="popup__text">
+          Выберите мастера
+        </span>
+            <select class="popup__input" tabindex="4" name="masters" placeholder="Выберите мастера" required
+        onfocus='this.size=5;' onblur='this.size=1;'
+        onchange='this.size=1; this.blur();'>
+              <option class="popup__option" value="Романова Джулия">
+            Романова Джулия
+          </option>
+              <option class="popup__option" value="Карамзина Лилия">
+            Карамзина Лилия
+          </option>
+              <option class="popup__option" value="Хорошева Инна">
+            Хорошева Инна
+          </option>
+              <option class="popup__option" value="Чупина Олеся">
+            Чупина Олеся
+          </option>
+              <option class="popup__option" value="Котова Дарья">
+            Котова Дарья
+          </option>
+              <option class="popup__option" value="Рыжова Елизавета">
+            Рыжова Елизавета
+          </option>
+              <option class="popup__option" value="Зотова Анна">
+            Зотова Анна
+          </option>
+              <option class="popup__option" value=Иванова Юлия"">
+            Иванова Юлия
+          </option>
+              <option class="popup__option" value="Абрамова Ольга">
+            Абрамова Ольга
+          </option>
+              <option class="popup__option" value="Иванова Елена">
+            Иванова Елена
+          </option>
+              <option class="popup__option" value="Крылова Дарья">
+            Крылова Дарья
+          </option>
+              <option class="popup__option" value="Сушина Анастасия">
+            Сушина Анастасия
+          </option>
+              <option class="popup__option" value=Симонова Елена"">
+            Симонова Елена
+          </option>
+              <option class="popup__option" value="Кускова Мила">
+            Кускова Мила
+          </option>
+              <option class="popup__option" value="Юшина Анна">
+            Юшина Анна
+          </option>
+              <option class="popup__option" value="Левина Ольга">
+            Левина Ольга
+          </option>
+            </select>
+            <button class="popup__btn" type="submit">Готово</button>
+          </form>
+        </div>
       </div>
-    </section>
-  <section class="reviews-slider" id="reviews">
-      <div class="container reviews-slider__container">
-        <h2 class="reviews-slider__title title">
+
+      <div class="confirmation">
+        <div class="confirmation__body">
+          <div class="confirmation__content">
+            <img class="confirmation__close" src="images/icon/close.svg" alt="закрыть">
+            <span class="confirmation__title title">
+          Вы записаны!
+        </span>
+            <p class="confirmation__text">
+          Скоро с Вами свяжется наш оператор для уточнения времени
+        </p>
+            <span class="confirmation__text">
+          Спасибо
+        </span>
+          </div>
+        </div>
+      </div>
+
+      <section class="reviews-slider" id="reviews">
+        <div class="container reviews-slider__container">
+          <h2 class="reviews-slider__title title">
           Отзывы
         </h2>
-        <ul class="reviews-slider__inner">
+          <ul class="reviews-slider__inner">
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/1.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/1a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/1.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/1.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/1a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/1.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Романова Джулия
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Уютная студия и прекрасные мастера!
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/2.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/2a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/2.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/2.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/2a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/2.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Карамзина Лилия
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Уютная студия и прекрасные мастера!
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="5"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="5"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="5"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="5">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/3.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/3a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/3.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/3.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/3a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/3.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Хорошева Инна
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Замечательные девушки, очень вежливый персонал. Реснички держались почти 3 недели.
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/4.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/4a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/4.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/4.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/4a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/4.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Чупина Олеся
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Замечательные девушки, очень вежливый персонал. Реснички держались почти 3 недели.
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="5"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="5"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="5"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="5">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/5.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/5a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/5.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/5.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/5a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/5.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Котова Дарья
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Долго не решалась на первое наращивание, но после посещения студии решила, что однозначно вернусь!))))
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/6.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/6a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/6.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/6.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/6a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/6.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Рыжова Елизавета
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Прекрасная студия, все понравилось
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/7.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/7a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/7.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/7.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/7a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/7.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Зотова Анна
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Хороший сервис и качественная работа
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/8.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/8a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/8.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/8.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/8a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/8.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Иванова Юлия
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Классно, очень понравилогсь
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/9.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/9a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/9.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/9.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/9a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/9.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Абрамова Ольга
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Хорошая студия))
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/10.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/10a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/10.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/10.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/10a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/10.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Иванова Елена
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Все понравилось, точно вернусь!
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/11.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/11a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/11.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/11.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/11a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/11.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Крылова Дарья
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Очень внимательные и опытные мастера
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/12.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/12a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/12.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/12.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/12a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/12.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Сушина Анастасия
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Замечательные девушки, очень вежливый персонал. Наращивание продержалось долго
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/13.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/13a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/13.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/13.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/13a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/13.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Симонова Елена
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Прекрасные качественные работы
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/14.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/14a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/14.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/14.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/14a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/14.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Кускова Мила
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Уютная студия и прекрасные мастера! Реснички держались долго
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/15.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/15a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/15.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/15.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/15a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/15.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Юшина Анна
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Замечательные девушки, очень вежливый персонал. Реснички держались почти 3 недели.
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="reviews-slider__list">
-            <div class="reviews-slider__item">
-              <div class="reviews-slider__content">
-                <picture class="reviews-slider__picture">
-                  <source srcset="images/reviews/16.png" media="(min-width: 1440px)">
-                  <source srcset="images/reviews/16a.png" media="(max-width: 450px)">
-                  <img class="reviews-slider__image" src="images/reviews/16.png" alt="Фото мастера">
-                </picture>
-                <span class="reviews-slider__name">
+            <li class="reviews-slider__list">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__content">
+                  <picture class="reviews-slider__picture">
+                    <source srcset="images/reviews/16.png" media="(min-width: 1440px)">
+                    <source srcset="images/reviews/16a.png" media="(max-width: 450px)">
+                    <img class="reviews-slider__image" src="images/reviews/16.png" alt="Фото мастера">
+                  </picture>
+                  <span class="reviews-slider__name">
                   Левина Ольга
                 </span>
-                <p class="reviews-slider__text">
+                  <p class="reviews-slider__text">
                   Студия рядом с метро, очень удобно
                 </p>
+                </div>
+                <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
+                <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4"></div>
               </div>
-              <div class="star" data-rateyo-spacing="15px" data-rateyo-rating="4"></div>
-              <div class="star-adaptive" data-rateyo-spacing="10px" data-rateyo-rating="4">
-              </div>
-            </div>
-          </li>
+            </li>
 
-        </ul>
-    </section>
-  <section class="faq" id="faq">
-      <div class="container">
-        <div class="faq__inner">
-          <h2 class="faq__title title">
+          </ul>
+        </section>
+
+        <section class="faq" id="faq">
+          <div class="container">
+            <div class="faq__inner">
+              <h2 class="faq__title title">
             Часто задаваемые вопросы
           </h2>
-          <ol class="faq__list">
+              <ol class="faq__list">
 
-            <li class="faq__item faq__one">
-              <p class="faq__subtitle">
+                <li class="faq__item faq__one">
+                  <p class="faq__subtitle">
                 Что не рекомендуется делать после наращивания ресниц?
               </p>
-              <p class="faq__text">
+                  <p class="faq__text">
                 Вытирать ресницы полотенцем не рекомендуется. Достаточно просто промокнуть их. После водных процедур
                 просушивать ресницы, т. к. влага негативно воздействует на клей. Для просушки рекомендуется пользоваться
                 веером.
               </p>
-            </li>
+                </li>
 
-            <li class="faq__item">
-              <p class="faq__subtitle">
+                <li class="faq__item">
+                  <p class="faq__subtitle">
                 Сколько держится эффект?
               </p>
-              <p class="faq__text">
+                  <p class="faq__text">
                 Первичное наращивание ресниц покажет, сколько держится эффект. Он должен сохраниться в пределах от 2
                 недель до 1,5-2 месяцев (при разных условиях и при разном уходе за ними).
               </p>
-            </li>
+                </li>
 
-            <li class="faq__item">
-              <p class="faq__subtitle">
+                <li class="faq__item">
+                  <p class="faq__subtitle">
                 Как ухаживать за ресницами?
               </p>
-              <p class="faq__text">
+                  <p class="faq__text">
                 За ресницами ухаживать достаточно просто: Глаза промывайте обычной, чуть теплой водой. Если вы
                 пользуетесь
                 пенками и гелями для умывания, старайтесь, чтобы они не попадали на ресницы.
               </p>
-            </li>
+                </li>
 
-            <li class="faq__item">
-              <p class="faq__subtitle">
+                <li class="faq__item">
+                  <p class="faq__subtitle">
                 Обязательно ли снимать ресницы в салоне?
               </p>
-              <p class="faq__text">
+                  <p class="faq__text">
                 Благодаря снятию ресниц в салоне вам удастся сохранить красивый и здоровый вид родных волосков. Более
                 того, это единственный вариант достижения данной цели. Мастера в салоне обладают специальной техникой.
               </p>
-            </li>
+                </li>
 
-          </ol>
-        </div>
-      </div>
-    </section>
-  <section class="contact" id="contacts">
-      <div class="container contact__container">
-        <h2 class="contact__title title">
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contacts">
+          <div class="container contact__container">
+            <h2 class="contact__title title">
           Контакты
         </h2>
-        <address class="contact__inner">
+            <address class="contact__inner">
 
-          <div id="map"></div>
+              <div id="map"></div>
 
-          <div class="contact__info">
+              <div class="contact__info">
 
-            <div class="contact__box">
-              <div class="contact__icon">
-                <img class="contact__images" src="images/icon/marker.svg" alt="иконка места">
-              </div>
-              <p class="contact__text">
+                <div class="contact__box">
+                  <div class="contact__icon">
+                    <img class="contact__images" src="images/icon/marker.svg" alt="иконка места">
+                  </div>
+                  <p class="contact__text">
                 393978</br>
                 Москва, Каширское шоссе дом 55
               </p>
-            </div>
-
-            <div class="contact__box">
-              <div class="contact__icon">
-                <img class="contact__images" src="images/icon/phone.svg" alt="иконка телефона">
               </div>
-              <div class="contact__phone">
-                <a class="contact__number" href="tel:+84953237948">
+
+              <div class="contact__box">
+                <div class="contact__icon">
+                  <img class="contact__images" src="images/icon/phone.svg" alt="иконка телефона">
+                </div>
+                <div class="contact__phone">
+                  <a class="contact__number" href="tel:+84953237948">
                   8 (495) 323 79 48
                 </a>
-                <a class="contact__number" href="tel:+84953737640">
+                  <a class="contact__number" href="tel:+84953737640">
                   8 (495) 373 76 40
                 </a>
+                </div>
               </div>
-            </div>
 
-            <div class="contact__box">
-              <div class="contact__icon">
-                <img class="contact__images" src="images/icon/time.svg" alt="иконка часов">
-              </div>
-              <p class="contact__text">
+              <div class="contact__box">
+                <div class="contact__icon">
+                  <img class="contact__images" src="images/icon/time.svg" alt="иконка часов">
+                </div>
+                <p class="contact__text">
                 Часы работы:</br>
                 Будние 8:00 - 22:00</br>
                 Выходные 8:00 - 17:00
               </p>
-            </div>
-
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="footer__inner">
       <div class="footer__item">
@@ -874,144 +986,23 @@
   </div>
 </footer>
 
-    <div class="popup">
-    <div class="popup__body">
-      <a class="popup__area" href="#header"></a>
-      <form class="popup__content">
-        <img class="popup__close" src="images/icon/close.svg" alt="закрыть">
-        <p class="popup__title title">Подписаться</p>
-        <p class="popup__text">
-          ФИО
-        </p>
-        <input class="popup__input" type="text" tabindex="1" name="username" placeholder="ФИО" required>
-        <p class="popup__text">
-          Телефон
-        </p>
-        <input class="popup__input" type="tel" tabindex="2" name="userphone" placeholder="+7" required>
-        <p class="popup__text">
-          Выберите наращивание
-        </p>
-        <select class="popup__input" tabindex="3" name="" placeholder="Выберите наращивание"
-        onfocus='this.size=5;' onblur='this.size=1;'
-        onchange='this.size=1; this.blur();'>
-          <option class="popup__option" value="Эффект 2D">
-            Эффект 2D
-          </option>
-          <option class="popup__option" value="Голливуд">
-            Голливуд
-          </option>
-          <option class="popup__option" value="Эффект 3D">
-            Эффект 3D
-          </option>
-          <option class="popup__option" value="Классика">
-            Классика
-          </option>
-          <option class="popup__option" value="Лисий эффект">
-            Лисий эффект
-          </option>
-          <option class="popup__option" value="Мокрый эффект">
-            Мокрый эффект
-          </option>
-          <option class="popup__option" value="Беличий эффект">
-            Беличий эффект
-          </option>
-          <option class="popup__option" value="Цветной эффект">
-            Цветной эффект
-          </option>
-        </select>
-        <span class="popup__text">
-          Выберите мастера
-        </span>
-        <select class="popup__input" tabindex="4" name="masters" placeholder="Выберите мастера" required
-        onfocus='this.size=5;' onblur='this.size=1;'
-        onchange='this.size=1; this.blur();'>
-          <option class="popup__option" value="Романова Джулия">
-            Романова Джулия
-          </option>
-          <option class="popup__option" value="Карамзина Лилия">
-            Карамзина Лилия
-          </option>
-          <option class="popup__option" value="Хорошева Инна">
-            Хорошева Инна
-          </option>
-          <option class="popup__option" value="Чупина Олеся">
-            Чупина Олеся
-          </option>
-          <option class="popup__option" value="Котова Дарья">
-            Котова Дарья
-          </option>
-          <option class="popup__option" value="Рыжова Елизавета">
-            Рыжова Елизавета
-          </option>
-          <option class="popup__option" value="Зотова Анна">
-            Зотова Анна
-          </option>
-          <option class="popup__option" value=Иванова Юлия"">
-            Иванова Юлия
-          </option>
-          <option class="popup__option" value="Абрамова Ольга">
-            Абрамова Ольга
-          </option>
-          <option class="popup__option" value="Иванова Елена">
-            Иванова Елена
-          </option>
-          <option class="popup__option" value="Крылова Дарья">
-            Крылова Дарья
-          </option>
-          <option class="popup__option" value="Сушина Анастасия">
-            Сушина Анастасия
-          </option>
-          <option class="popup__option" value=Симонова Елена"">
-            Симонова Елена
-          </option>
-          <option class="popup__option" value="Кускова Мила">
-            Кускова Мила
-          </option>
-          <option class="popup__option" value="Юшина Анна">
-            Юшина Анна
-          </option>
-          <option class="popup__option" value="Левина Ольга">
-            Левина Ольга
-          </option>
-        </select>
-        <button class="popup__btn" type="submit">Готово</button>
-      </form>
-    </div>
-  </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" async></script>
+<script>
+  let map;
 
-    <div class="confirmation">
-    <div class="confirmation__body">
-      <div class="confirmation__content">
-        <img class="confirmation__close" src="images/icon/close.svg" alt="закрыть">
-        <span class="confirmation__title title">
-          Вы записаны!
-        </span>
-        <p class="confirmation__text">
-          Скоро с Вами свяжется наш оператор для уточнения времени
-        </p>
-        <span class="confirmation__text">
-          Спасибо
-        </span>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" async>
-  </script>
-  <script>
-    let map;
-
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
+  function initMap() {
+    map = new google
+      .maps
+      .Map(document.getElementById("map"), {
         center: {
           lat: 55.75543085301865,
           lng: 37.61656589501851
         },
-        zoom: 11,
+        zoom: 11
       });
-    }
-  </script>
-  <script src="js/main.min.js"></script>
+  }
+</script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>
