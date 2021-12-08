@@ -349,7 +349,7 @@
 
     &__content {
       width: 250px;
-      padding: 181px 0 240px;
+      padding: 181px 0 240пpx;
       margin-left: -180px;
       text-align: left;
       order: 0;
@@ -599,7 +599,7 @@
 
     &__link {
       display: block;
-      padding: 10px 0;
+      padding: 9px 0;
     }
   }
 
@@ -742,6 +742,9 @@
   }
 
   .confirmation {
+    &__title {
+      font-size: 24px;
+    }
     &__content {
       padding: 50px 30px;
     }
