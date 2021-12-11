@@ -106,6 +106,21 @@ $(function () {
     $('.menu__link').not($(this)).removeClass('menu__link--active');
   });
 
+  $('.menu__link').click(function (e) {
+    e.preventDefault();
+    $('.menu__list').removeClass('active');
+  });
+
+  $('.menu__link').click(function (e) {
+    e.preventDefault();
+    $('.menu__list').fadeIn(500);
+    $('html').removeClass('no-scroll-menu');
+  });
+
+  $('.menu__burger').on('click', function () {
+    $('html').toggleClass('no-scroll-menu');
+  });
+
   $('.menu__burger').on('click', function () {
     $('.menu__list').toggleClass('active');
   });

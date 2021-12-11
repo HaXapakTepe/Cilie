@@ -188,7 +188,7 @@
   }
 
   .top {
-    padding: 60 0 0;
+    padding: 60px 0 0;
 
     &__title {
       font-size: 45px;
@@ -326,12 +326,12 @@
 
 @media (max-width: 576px) {
 
-  .header {
-    padding: 12px 10px;
-  }
+  // .header {
+  //   padding: 12px 10px;
+  // }
 
   .top {
-    padding: 84px 0 0;
+    padding: 80px 0 0;
 
     &__container {
       padding: 0;
@@ -348,8 +348,8 @@
     }
 
     &__content {
-      width: 250px;
-      padding: 181px 0 240пpx;
+      max-width: 250px;
+      padding: 181px 0 235px;
       margin-left: -180px;
       text-align: left;
       order: 0;
@@ -366,7 +366,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      max-width: 197px;
+      max-width: 195px;
     }
 
     .link {
