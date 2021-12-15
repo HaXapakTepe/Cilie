@@ -326,10 +326,6 @@
 
 @media (max-width: 576px) {
 
-  // .header {
-  //   padding: 12px 10px;
-  // }
-
   .top {
     padding: 80px 0 0;
 
@@ -407,6 +403,9 @@
     }
 
     &__item {
+      &::before {
+        top: 0;
+      }
       &::marker {
         font-size: 15px;
       }
@@ -417,7 +416,7 @@
 
       &::before,
       &::after {
-        top: 20px;
+        top: 10px;
       }
     }
 
@@ -601,6 +600,10 @@
       display: block;
       padding: 9px 0;
     }
+  }
+
+  .no-scroll-menu {
+    overflow-y: hidden;
   }
 
   .language {
