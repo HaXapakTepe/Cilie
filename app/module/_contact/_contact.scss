@@ -21,10 +21,10 @@
   &__box {
     display: flex;
     margin-bottom: 35px;
-
-    &:first-child .contact__text {
-      margin-left: 5px;
-    }
+  }
+  
+  &__box:first-child .contact__text {
+    margin-left: 5px;
   }
 
   &__icon {

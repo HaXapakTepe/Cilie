@@ -101,6 +101,11 @@ $(function () {
     readOnly: true,
   });
 
+  $('.menu__link').click(function (e) {
+    e.preventDefault();
+    $('.menu__burger').removeClass('menu__burger--active');
+  });
+
   $('.menu__link').on('click', function () {
     $(this).toggleClass('menu__link--active');
     $('.menu__link').not($(this)).removeClass('menu__link--active');
