@@ -31,7 +31,6 @@ function styles() {
     .pipe(scss({
       outputStyle: 'compressed'
     }))
-    // .pipe(concat('style.min.css'))
     .pipe(rename({
       suffix: '.min'
     }))
